@@ -1,16 +1,26 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class EventClick : MonoBehaviour
+public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void OnPointerDown(PointerEventData eventData)
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    }
+    public void OnPointerUp(PointerEventData eventData)
     {
-        
+
+    }
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        Debug.Log(eventData.pointerClick.gameObject.name);
+    }
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+
+    }
+    public void OnPointerExit(PointerEventData eventData)
+    {
+
     }
 }
