@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
+    public int NoteIndex;
     [SerializeField] protected int MaxHealth;
     public int CurrentHealth;
     [SerializeField] protected int MovementSpeed;
