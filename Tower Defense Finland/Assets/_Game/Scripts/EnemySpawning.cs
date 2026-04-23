@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemySpawning : MonoBehaviour
 {
     [SerializeField] private GameObject enemyPrefab;
-    [SerializeField] private int spawnCount; // amount of enemies spawning per interval
+    [SerializeField] private float spawnCount; // amount of enemies spawning per interval
     [SerializeField] private int spawnInterval; // the time between each spawn
     private int spawnTime;
 

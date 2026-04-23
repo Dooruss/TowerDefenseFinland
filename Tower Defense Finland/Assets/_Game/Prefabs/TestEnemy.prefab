@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6876379625124488447}
   - component: {fileID: 5199502913611834838}
   - component: {fileID: 5653483007760097132}
+  - component: {fileID: 4896973685664444872}
   m_Layer: 0
   m_Name: TestEnemy
   m_TagString: Enemy
@@ -153,8 +154,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869baaf7692869640a5d6cdd95cad3e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy_1
+  NoteIndex: 0
   MaxHealth: 10
   CurrentHealth: 0
   MovementSpeed: 10
   AttackPower: 10
-  AttackSpeed: 10
+--- !u!114 &4896973685664444872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7828611842803932482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachineDollyCart
+  m_Path: {fileID: 0}
+  m_UpdateMethod: 0
+  m_PositionUnits: 2
+  m_Speed: 0.1
+  m_Position: 0
