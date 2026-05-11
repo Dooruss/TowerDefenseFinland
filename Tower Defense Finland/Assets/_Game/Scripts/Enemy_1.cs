@@ -2,7 +2,11 @@ using Cinemachine;
 using System.Runtime.Serialization;
 using UnityEngine;
 
-public class Enemy_1 : Entity
+public interface IEnemy
+{
+    void Kill();
+}
+public class Enemy_1 : Entity, IEnemy
 {
     private void Update()
     {
@@ -39,6 +43,13 @@ public class Enemy_1 : Entity
             print("Attacked tower / reached the end");
         }
         base.OnDeath(AttacksTower);
+    }
+
+    public void Kill(float damage)
+    {
+        //nothing yet
+        //make it sos that eneymy can be attacked
+        OnDeath(true);
     }
 
 }

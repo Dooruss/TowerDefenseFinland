@@ -1,6 +1,7 @@
 using Cinemachine;
 using UnityEngine;
 
+
 public class Entity : MonoBehaviour
 {
     public int NoteIndex;
