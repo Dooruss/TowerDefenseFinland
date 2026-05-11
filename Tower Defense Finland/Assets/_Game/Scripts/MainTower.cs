@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainTower : MonoBehaviour
 {
-    [SerializeField] private int MaxHealth;
-    [SerializeField] public int MainCurrentHealth;
+    [SerializeField] private float MaxHealth;
+    [SerializeField] public float MainCurrentHealth;
+    [SerializeField] private Image HP_Bar;
 
     private void Start()
     {
@@ -15,5 +18,6 @@ public class MainTower : MonoBehaviour
         {
             //game over
         }
+        HP_Bar.fillAmount = MainCurrentHealth / MaxHealth;
     }
 }
