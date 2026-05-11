@@ -19,13 +19,16 @@ public class Entity : MonoBehaviour
         Spawner = FindAnyObjectByType<EnemySpawning>();
         cartScript = GetComponent<CinemachineDollyCart>();
         CurrentHealth = MaxHealth;
-        if (Spawner.ParalelTrack) // if the path has multiple routes
+        if (Spawner != null)
         {
-            IsParalelTrack = true;
-            AllPaths = Spawner.ParalelPaths;
-            cartScript.m_Path = AllPaths[0];
+            if (Spawner.ParalelTrack) // if the path has multiple routes
+            {
+                IsParalelTrack = true;
+                AllPaths = Spawner.ParalelPaths;
+                cartScript.m_Path = AllPaths[0];
+            }
+            else { cartScript.m_Path = FindAnyObjectByType<CinemachinePath>(); }
         }
-        else { cartScript.m_Path = FindAnyObjectByType<CinemachinePath>(); }
     }
 
     virtual public void CheckDeath()

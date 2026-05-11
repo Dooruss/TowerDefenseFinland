@@ -7,6 +7,7 @@ public class TowerShoot : MonoBehaviour
     public float maxDistance = 500f;
     public float timer = 0f;
     public float shootSpeed = 0.5f;
+    public ParticleSystem particles;
     void Start()
     {
         // Haal of voeg een LineRenderer toe aan de controller
@@ -31,7 +32,8 @@ public class TowerShoot : MonoBehaviour
             if (enemy != null && timer > shootSpeed)
             {
                 Debug.Log("Hit Something");
-                enemy.Kill();
+                enemy.Kill(50);
+                particles.Play();
                 timer = 0f;
             }
         }

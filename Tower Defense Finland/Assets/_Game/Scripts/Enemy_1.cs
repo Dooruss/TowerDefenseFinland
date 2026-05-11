@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface IEnemy
 {
-    void Kill();
+    void Kill(int damage);
 }
 public class Enemy_1 : Entity, IEnemy
 {
@@ -45,11 +45,10 @@ public class Enemy_1 : Entity, IEnemy
         base.OnDeath(AttacksTower);
     }
 
-    public void Kill(float damage)
+    public void Kill(int damage)
     {
-        //nothing yet
-        //make it sos that eneymy can be attacked
-        OnDeath(true);
+        //damage
+        TakeDamage(damage);
     }
 
 }
