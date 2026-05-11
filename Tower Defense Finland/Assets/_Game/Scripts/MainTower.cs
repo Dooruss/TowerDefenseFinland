@@ -1,12 +1,16 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MainTower : MonoBehaviour
 {
+    [Header("Health")]
     [SerializeField] private float MaxHealth;
     [SerializeField] public float MainCurrentHealth;
+    [Header("UI Elements")]
     [SerializeField] private Image HP_Bar;
+    [SerializeField] private TextMeshProUGUI Text_HP_Amount;
 
     private void Start()
     {
@@ -14,10 +18,13 @@ public class MainTower : MonoBehaviour
     }
     void Update()
     {
-        if (MainCurrentHealth <= 0)
-        {
-            //game over
-        }
+        if (MainCurrentHealth <= 0) { GameOver(); }
         HP_Bar.fillAmount = MainCurrentHealth / MaxHealth;
+        Text_HP_Amount.text = $"{MainCurrentHealth}/{MaxHealth}";
+    }
+
+    void GameOver()
+    {
+        //game overr
     }
 }
