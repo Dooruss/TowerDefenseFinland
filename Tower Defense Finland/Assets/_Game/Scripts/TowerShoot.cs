@@ -8,6 +8,7 @@ public class TowerShoot : MonoBehaviour
     public float timer = 0f;
     public float shootSpeed = 0.5f;
     public ParticleSystem particles;
+    public int damage = 50;
     void Start()
     {
         // Haal of voeg een LineRenderer toe aan de controller
@@ -32,7 +33,7 @@ public class TowerShoot : MonoBehaviour
             if (enemy != null && timer > shootSpeed)
             {
                 Debug.Log("Hit Something");
-                enemy.Kill(50);
+                enemy.Kill(damage);
                 particles.Play();
                 timer = 0f;
             }
