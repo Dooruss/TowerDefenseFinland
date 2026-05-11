@@ -9,15 +9,21 @@ public class Entity : MonoBehaviour
     [SerializeField] protected int MovementSpeed;
     [SerializeField] protected int AttackPower;
     protected CinemachineDollyCart cartScript;
+    protected EnemySpawning Spawner;
+    protected bool IsParalelTrack;
+    [SerializeField] protected CinemachinePath[] AllPaths;
 
     private void Start()
     {
-        CurrentHealth = MaxHealth;
+        Spawner = FindAnyObjectByType<EnemySpawning>();
         cartScript = GetComponent<CinemachineDollyCart>();
-        if (cartScript.m_Path == null)
+        CurrentHealth = MaxHealth;
+        if (Spawner.ParalelTrack)
         {
-            cartScript.m_Path = FindAnyObjectByType<CinemachinePath>();
+            //paralel
+            IsParalelTrack = true;
         }
+        else { cartScript.m_Path = FindAnyObjectByType<CinemachinePath>(); }
     }
 
     virtual public void CheckDeath()
