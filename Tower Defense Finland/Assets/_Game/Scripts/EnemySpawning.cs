@@ -5,6 +5,7 @@ public class EnemySpawning : MonoBehaviour
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private float spawnCount; // amount of enemies spawning per interval
     [SerializeField] private int spawnInterval; // the time between each spawn
+    public bool ParalelTrack;
     private int spawnTime;
 
     private void Start()
