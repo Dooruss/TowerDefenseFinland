@@ -13,11 +13,13 @@ public class Entity : MonoBehaviour
     protected EnemySpawning Spawner;
     protected bool IsParalelTrack;
     [SerializeField] protected CinemachinePath[] AllPaths;
+    protected MainTower MainTower;
 
     private void Start()
     {
         Spawner = FindAnyObjectByType<EnemySpawning>();
         cartScript = GetComponent<CinemachineDollyCart>();
+        MainTower = FindAnyObjectByType<MainTower>();
         CurrentHealth = MaxHealth;
         if (Spawner != null)
         {
