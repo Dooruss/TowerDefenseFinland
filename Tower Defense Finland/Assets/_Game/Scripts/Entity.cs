@@ -18,10 +18,10 @@ public class Entity : MonoBehaviour
         Spawner = FindAnyObjectByType<EnemySpawning>();
         cartScript = GetComponent<CinemachineDollyCart>();
         CurrentHealth = MaxHealth;
-        if (Spawner.ParalelTrack)
+        if (Spawner.ParalelTrack) // if the path has multiple routes
         {
-            //paralel
             IsParalelTrack = true;
+            AllPaths = Spawner.ParalelPaths;
         }
         else { cartScript.m_Path = FindAnyObjectByType<CinemachinePath>(); }
     }
