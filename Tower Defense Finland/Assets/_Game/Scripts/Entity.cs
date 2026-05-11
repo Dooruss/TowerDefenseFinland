@@ -22,6 +22,7 @@ public class Entity : MonoBehaviour
         {
             IsParalelTrack = true;
             AllPaths = Spawner.ParalelPaths;
+            cartScript.m_Path = AllPaths[0];
         }
         else { cartScript.m_Path = FindAnyObjectByType<CinemachinePath>(); }
     }
