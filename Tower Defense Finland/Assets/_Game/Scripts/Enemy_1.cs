@@ -9,7 +9,7 @@ public class Enemy_1 : Entity
         CheckDeath();
         if (cartScript.m_Position == 1 && !IsParalelTrack)
         {
-            OnDeath(true);
+            //OnDeath(true);
         }
         else if (cartScript.m_Position == 1 && IsParalelTrack)
         {
