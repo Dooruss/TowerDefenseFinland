@@ -1,19 +1,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
-public class TowerShootAura : MonoBehaviour
+public class FireTower : MonoBehaviour
 {
     public float timer = 0f;
     public float shootSpeed = 3f;
     public ParticleSystem particles;
     public int damage = 50;
     public List<GameObject> EnemyList;
-    public GameObject speer;
-    public void Update()
+    //public GameObject fireball;
+
+    private void Update()
     {
         timer += Time.deltaTime;
-        if(timer > shootSpeed)
+        if (timer > shootSpeed)
         {
             if (EnemyList.Count != 0)
             {
@@ -26,12 +28,12 @@ public class TowerShootAura : MonoBehaviour
                     else
                     {
                         IEnemy enemyInterface = enemy.GetComponent<IEnemy>();
+                        //Debug.Log("Damaged" + enemy.name);
+                        //GameObject SpawnedFIREBALL = Instantiate(fireball, this.gameObject.transform);
+                        //ShootSpeer script = SpawnedFIREBALL.GetComponent<ShootSpeer>();
+                       // SpawnedFIREBALL.transform.localScale = new Vector3(0.03333334f, 0.006666666f, 0.006666666f);
+                        //script.objectToHit = enemy.transform;
                         enemyInterface.Kill(damage);
-                        Debug.Log("Damaged" + enemy.name);
-                        GameObject SpawnedSpeer = Instantiate(speer, this.gameObject.transform);
-                        ShootSpeer script = SpawnedSpeer.GetComponent<ShootSpeer>();
-                        SpawnedSpeer.transform.localScale = new Vector3(0.03333334f, 0.006666666f, 0.006666666f);
-                        script.objectToHit = enemy.transform;
                     }
                 }
                 particles.Play();
@@ -51,7 +53,7 @@ public class TowerShootAura : MonoBehaviour
         //get the name and then remove it
         string EnemeyName = other.name;
         //the word enemy is a placeholder variable representing each individual element in the EnemyList as the list is being searched.
-        GameObject EnemyOBJ =  EnemyList.FirstOrDefault(enemy => enemy.name == EnemeyName);
+        GameObject EnemyOBJ = EnemyList.FirstOrDefault(enemy => enemy.name == EnemeyName);
         EnemyList.Remove(EnemyOBJ);
 
     }

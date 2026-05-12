@@ -1,6 +1,7 @@
 using Cinemachine;
 using System.Runtime.Serialization;
 using UnityEngine;
+using UnityEngine.UI;
 
 public interface IEnemy
 {
@@ -8,8 +9,10 @@ public interface IEnemy
 }
 public class Enemy_1 : Entity, IEnemy
 {
+    public Image HealthBarFill;
     private void Update()
     {
+        UpdateHealthBar();
         CheckDeath();
         if (cartScript.m_Position == 1 && !IsParalelTrack)
         {
@@ -50,5 +53,12 @@ public class Enemy_1 : Entity, IEnemy
         //damage
         TakeDamage(damage);
     }
+
+    void UpdateHealthBar()
+    {
+        HealthBarFill.fillAmount = (float)CurrentHealth / (float)MaxHealth;
+    }
+
+
 
 }
