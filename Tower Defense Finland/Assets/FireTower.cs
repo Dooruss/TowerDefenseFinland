@@ -11,6 +11,7 @@ public class FireTower : MonoBehaviour
     public int damage = 50;
     public List<GameObject> EnemyList;
     //public GameObject fireball;
+    public GameObject fireArea;
 
     private void Update()
     {
@@ -28,6 +29,7 @@ public class FireTower : MonoBehaviour
                     else
                     {
                         IEnemy enemyInterface = enemy.GetComponent<IEnemy>();
+                        Instantiate(fireArea, enemy.transform.position, enemy.transform.rotation);
                         //Debug.Log("Damaged" + enemy.name);
                         //GameObject SpawnedFIREBALL = Instantiate(fireball, this.gameObject.transform);
                         //ShootSpeer script = SpawnedFIREBALL.GetComponent<ShootSpeer>();
