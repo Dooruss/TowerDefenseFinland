@@ -6,16 +6,9 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
 {
     [SerializeField] private Material highLightedObject;
 
-    private enum TowerTypes
-    {
-        Tower1,
-        Tower2,
-        Tower3
-    }
-
-    [SerializeField] private TowerTypes towerTypes;
-
-    [SerializeField] private List<GameObject> Towers;
+    private bool ObjectClicked;
+     
+    [SerializeField] private List<GameObject> Buttons;
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -27,30 +20,40 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
     }
     public void OnPointerClick(PointerEventData eventData)
     {
-        switch (towerTypes)
+
+        if (!ObjectClicked)
         {
-            case TowerTypes.Tower1:
-                Destroy(gameObject);
-                Instantiate(Towers[0].gameObject, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
-                break;
+            ObjectClicked = true;
 
-            case TowerTypes.Tower2:
-                Destroy(gameObject);
-                Instantiate(Towers[1].gameObject, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
-                break;
+            for (int i = 0; i < Buttons.Count; i++)
+            {
+                Buttons[i].gameObject.SetActive(true);
+            }
+        }
 
-            case TowerTypes.Tower3:
-                Destroy(gameObject);
-                Instantiate(Towers[2].gameObject, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
-                break;
+        if(ObjectClicked && eventData.pointerClick.gameObject != gameObject)
+        {
+            GetComponent<MeshRenderer>().material = null;
+            for (int i = 0; i < Buttons.Count; i++)
+            {
+                Buttons[i].gameObject.SetActive(false);
+            }
         }
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-        GetComponent<MeshRenderer>().material = highLightedObject;
+        if(eventData.pointerEnter.gameObject.tag == "Tower")
+        {
+            GetComponent<MeshRenderer>().material = highLightedObject;
+        }
     }
+
     public void OnPointerExit(PointerEventData eventData)
     {
-        GetComponent<MeshRenderer>().material = null;
+        if (!ObjectClicked)
+        {
+            GetComponent<MeshRenderer>().material = null;
+            Debug.Log("test");
+        }
     }
 }
