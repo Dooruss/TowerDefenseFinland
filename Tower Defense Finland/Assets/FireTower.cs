@@ -10,7 +10,7 @@ public class FireTower : MonoBehaviour
     public ParticleSystem particles;
     public int damage = 50;
     public List<GameObject> EnemyList;
-    //public GameObject fireball;
+    public GameObject fireball;
     public GameObject fireArea;
 
     private void Update()
@@ -28,13 +28,17 @@ public class FireTower : MonoBehaviour
                     }
                     else
                     {
+                        //make fire area
                         IEnemy enemyInterface = enemy.GetComponent<IEnemy>();
                         Instantiate(fireArea, enemy.transform.position, enemy.transform.rotation);
-                        //Debug.Log("Damaged" + enemy.name);
-                        //GameObject SpawnedFIREBALL = Instantiate(fireball, this.gameObject.transform);
-                        //ShootSpeer script = SpawnedFIREBALL.GetComponent<ShootSpeer>();
-                       // SpawnedFIREBALL.transform.localScale = new Vector3(0.03333334f, 0.006666666f, 0.006666666f);
-                        //script.objectToHit = enemy.transform;
+
+                        //throw fireball towards the fire area
+                        GameObject SpawnedFIREBALL = Instantiate(fireball, this.gameObject.transform);
+                        ShootSpeer script = SpawnedFIREBALL.GetComponent<ShootSpeer>();
+                        SpawnedFIREBALL.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+                        script.objectToHit = enemy.transform;
+
+                        //damage enemy
                         enemyInterface.Kill(damage);
                     }
                 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8207609645922856628}
   - component: {fileID: 8181702134847129563}
   - component: {fileID: 8572960044383006040}
+  - component: {fileID: 452425529895122887}
   m_Layer: 0
   m_Name: burn effect area
   m_TagString: Untagged
@@ -107,12 +108,26 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 11.665378, z: 0.99999905}
   m_Center: {x: 0, y: 5.3326893, z: 0}
+--- !u!114 &452425529895122887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737485745487407726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2628e544155a24c9c0ce7a1d65966b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  EnemyToDamage: {fileID: 0}
+  timer: 0
 --- !u!1 &1100665886280869734
 GameObject:
   m_ObjectHideFlags: 0
