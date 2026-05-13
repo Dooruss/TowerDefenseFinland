@@ -22,7 +22,7 @@ public class Enemy_1 : Entity, IEnemy
         {
             if (cartScript.m_Path == AllPaths[0])
             {
-                int RandomNumber = Random.Range(1, 3);
+                int RandomNumber = Random.Range(1, 2);
                 cartScript.m_Position = 0;
                 cartScript.m_Path = AllPaths[RandomNumber];
             }
