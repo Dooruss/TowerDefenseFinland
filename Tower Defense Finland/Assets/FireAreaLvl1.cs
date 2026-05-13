@@ -25,7 +25,8 @@ public class FireAreaLvl1 : MonoBehaviour
                 timer = 0;
             }
         }
-        
+
+        Destroy(this.gameObject, 5f);
     }
     private void OnTriggerEnter(Collider other)
     {
