@@ -1,15 +1,22 @@
 using Cinemachine;
 using System.Runtime.Serialization;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Enemy_1 : Entity
+public interface IEnemy
 {
+    void Kill(int damage);
+}
+public class Enemy_1 : Entity, IEnemy
+{
+    public Image HealthBarFill;
     private void Update()
     {
+        UpdateHealthBar();
         CheckDeath();
         if (cartScript.m_Position == 1 && !IsParalelTrack)
         {
-            //OnDeath(true);
+            OnDeath(true);
         }
         else if (cartScript.m_Position == 1 && IsParalelTrack)
         {
@@ -35,10 +42,23 @@ public class Enemy_1 : Entity
     {
         if (AttacksTower == true)
         {
-            //dmgs tower
+            MainTower.MainCurrentHealth -= AttackPower;
             print("Attacked tower / reached the end");
         }
         base.OnDeath(AttacksTower);
     }
+
+    public void Kill(int damage)
+    {
+        //damage
+        TakeDamage(damage);
+    }
+
+    void UpdateHealthBar()
+    {
+        HealthBarFill.fillAmount = (float)CurrentHealth / (float)MaxHealth;
+    }
+
+
 
 }

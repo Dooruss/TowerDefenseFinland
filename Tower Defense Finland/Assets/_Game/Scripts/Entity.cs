@@ -1,6 +1,7 @@
 using Cinemachine;
 using UnityEngine;
 
+
 public class Entity : MonoBehaviour
 {
     public int NoteIndex;
@@ -12,18 +13,24 @@ public class Entity : MonoBehaviour
     protected EnemySpawning Spawner;
     protected bool IsParalelTrack;
     [SerializeField] protected CinemachinePath[] AllPaths;
+    protected MainTower MainTower;
 
     private void Start()
     {
         Spawner = FindAnyObjectByType<EnemySpawning>();
         cartScript = GetComponent<CinemachineDollyCart>();
+        MainTower = FindAnyObjectByType<MainTower>();
         CurrentHealth = MaxHealth;
-        if (Spawner.ParalelTrack)
+        if (Spawner != null)
         {
-            //paralel
-            IsParalelTrack = true;
+            if (Spawner.ParalelTrack) // if the path has multiple routes
+            {
+                IsParalelTrack = true;
+                AllPaths = Spawner.ParalelPaths;
+                cartScript.m_Path = AllPaths[0];
+            }
+            else { cartScript.m_Path = FindAnyObjectByType<CinemachinePath>(); }
         }
-        else { cartScript.m_Path = FindAnyObjectByType<CinemachinePath>(); }
     }
 
     virtual public void CheckDeath()
