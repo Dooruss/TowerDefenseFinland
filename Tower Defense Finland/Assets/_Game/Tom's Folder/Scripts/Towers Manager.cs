@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class TowersManager : MonoBehaviour
 {
@@ -15,5 +16,13 @@ public class TowersManager : MonoBehaviour
         {
             Destroy(instance);
         }
+    }
+
+    private void Update()
+    {
+        //if (Input.GetMouseButtonUp(0) && GetComponent<PhysicsRaycaster>().Raycast(out HitInfo != "Tower")
+        //{
+        //    Debug.Log(GetComponent<PhysicsRaycaster>().gameObject.tag);
+        //}
     }
 }
