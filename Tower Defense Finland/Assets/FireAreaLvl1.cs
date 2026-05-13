@@ -21,7 +21,7 @@ public class FireAreaLvl1 : MonoBehaviour
             if(timer > 1)
             {
                 Debug.Log("Damage Enemy");
-                enemy.Kill(10);
+                enemy.Kill(2);
                 timer = 0;
             }
         }
