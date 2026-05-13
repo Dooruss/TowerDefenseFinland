@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 651347875848895996}
   - component: {fileID: 5285810934900782564}
   - component: {fileID: 7861621958144202118}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,9 +118,9 @@ GameObject:
   - component: {fileID: 7759430765875873348}
   - component: {fileID: 5845329555196303744}
   - component: {fileID: 2838666791158250534}
-  - component: {fileID: 7316937614846686514}
   - component: {fileID: 498995290495601523}
-  m_Layer: 0
+  - component: {fileID: 627641934435855977}
+  m_Layer: 6
   m_Name: Tower 2
   m_TagString: Tower Buttons
   m_Icon: {fileID: 0}
@@ -208,44 +208,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c8bdc00c351594184793aec50b2015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectEventClick
-  highLightedObject: {fileID: 0}
---- !u!70 &7316937614846686514
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535336817816479691}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.540661}
-  m_Size: {x: 253.6, y: 382.73618}
-  m_Direction: 0
+  Towers:
+  - {fileID: 6978276645352049597, guid: c97e0dafd8488b6488530680fe6010fe, type: 3}
+  - {fileID: 2546412833234446815, guid: 51680d9b7e804e048b71b0ccc48e3d61, type: 3}
+  - {fileID: 9205000826955150018, guid: 6a1036c5f53d12148b6665fda12041a6, type: 3}
+  towerTypes: 1
 --- !u!114 &498995290495601523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,6 +226,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BillBoard
   billboardType: 1
+--- !u!136 &627641934435855977
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535336817816479691}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 129.43
+  m_Height: 385.96677
+  m_Direction: 1
+  m_Center: {x: 0, y: 3.4507473, z: 0}
 --- !u!1 &2893425776366053086
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,10 +262,10 @@ GameObject:
   - component: {fileID: 3324079079541941860}
   - component: {fileID: 9017146663299252437}
   - component: {fileID: 3102076704198237648}
-  - component: {fileID: 3059481074566764166}
-  - component: {fileID: 7225881895876611651}
   - component: {fileID: 7153784660751377202}
-  m_Layer: 0
+  - component: {fileID: 5694930108776548721}
+  - component: {fileID: 5446653726627330429}
+  m_Layer: 6
   m_Name: Tower 3
   m_TagString: Tower Buttons
   m_Icon: {fileID: 0}
@@ -363,90 +353,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c8bdc00c351594184793aec50b2015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectEventClick
-  highLightedObject: {fileID: 0}
---- !u!61 &3059481074566764166
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2893425776366053086}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -53.72}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 255.78, y: 279.16}
-  m_EdgeRadius: 0
---- !u!70 &7225881895876611651
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2893425776366053086}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 31.186783}
-  m_Size: {x: 256.2, y: 318.57355}
-  m_Direction: 0
+  Towers:
+  - {fileID: 6978276645352049597, guid: c97e0dafd8488b6488530680fe6010fe, type: 3}
+  - {fileID: 2546412833234446815, guid: 51680d9b7e804e048b71b0ccc48e3d61, type: 3}
+  - {fileID: 9205000826955150018, guid: 6a1036c5f53d12148b6665fda12041a6, type: 3}
+  towerTypes: 2
 --- !u!114 &7153784660751377202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,6 +371,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BillBoard
   billboardType: 1
+--- !u!65 &5694930108776548721
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2893425776366053086}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 257.74954, y: 271.59918, z: 1}
+  m_Center: {x: -0.76944757, y: -58.477753, z: 0}
+--- !u!136 &5446653726627330429
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2893425776366053086}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 128.6
+  m_Height: 321.05334
+  m_Direction: 1
+  m_Center: {x: 0, y: 31.926746, z: 0}
 --- !u!1 &5638618864482629552
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,9 +428,9 @@ GameObject:
   - component: {fileID: 2284096094067778617}
   - component: {fileID: 944175493347924241}
   - component: {fileID: 8289171387104935178}
-  - component: {fileID: 7249328625480657993}
   - component: {fileID: 3890983097295973441}
-  m_Layer: 0
+  - component: {fileID: 6246418962255828751}
+  m_Layer: 6
   m_Name: Tower 1
   m_TagString: Tower Buttons
   m_Icon: {fileID: 0}
@@ -563,43 +518,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c8bdc00c351594184793aec50b2015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectEventClick
-  highLightedObject: {fileID: 0}
---- !u!58 &7249328625480657993
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5638618864482629552}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 208.44
+  Towers:
+  - {fileID: 6978276645352049597, guid: c97e0dafd8488b6488530680fe6010fe, type: 3}
+  - {fileID: 2546412833234446815, guid: 51680d9b7e804e048b71b0ccc48e3d61, type: 3}
+  - {fileID: 9205000826955150018, guid: 6a1036c5f53d12148b6665fda12041a6, type: 3}
+  towerTypes: 0
 --- !u!114 &3890983097295973441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,6 +536,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BillBoard
   billboardType: 1
+--- !u!135 &6246418962255828751
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5638618864482629552}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 186.22
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5780533251986518678
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,7 +571,7 @@ GameObject:
   - component: {fileID: 9221997646169610567}
   - component: {fileID: 823878229027146013}
   - component: {fileID: 8999515236857063959}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Craft Board
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -643,7 +587,7 @@ Transform:
   m_GameObject: {fileID: 5780533251986518678}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.33, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 6.482112, y: 9.880034, z: 6.482112}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -751,7 +695,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -773,5 +717,3 @@ MonoBehaviour:
   - {fileID: 5638618864482629552}
   - {fileID: 535336817816479691}
   - {fileID: 2893425776366053086}
-  towerTypes: 0
-  Towers: []
