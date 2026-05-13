@@ -7,8 +7,8 @@ public class EnemySpawning : MonoBehaviour
     [Tooltip("Amount of enemies spawning per interval")]
     [SerializeField] private float spawnCount; // amount of enemies spawning per interval
     [Tooltip("Time between each spawn")]
-    [SerializeField] private int spawnInterval; // the time between each spawn
-    private int spawnTime;
+    [SerializeField] private float spawnInterval; // the time between each spawn
+    private float spawnTime;
 
     [Header("Paralel stuff")]
     [Tooltip("Enable if u use a split path")]
@@ -23,7 +23,7 @@ public class EnemySpawning : MonoBehaviour
 
     void Update()
     {
-        spawnTime--;
+        spawnTime -= Time.deltaTime;
         if (spawnTime < 0)
         {
             SpawnEnemy();
