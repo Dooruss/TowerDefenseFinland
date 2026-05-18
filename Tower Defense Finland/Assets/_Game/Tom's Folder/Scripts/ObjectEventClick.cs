@@ -5,10 +5,14 @@ using UnityEngine.UI;
 
 public class ObjectEventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    [SerializeField] private Material highLightedObject;
-
-
     [SerializeField] private List<GameObject> Towers;
+
+    private GameObject parentObject;
+
+    private void Start()
+    {
+        parentObject = GetComponentInParent<EventClick>().gameObject;
+    }
 
     private enum TowerTypes
     {
@@ -32,18 +36,21 @@ public class ObjectEventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHa
         switch (towerTypes)
         {
             case TowerTypes.Tower1:
-                Destroy(gameObject);
-                Instantiate(Towers[0].gameObject, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+                Destroy(parentObject);
+                Instantiate(Towers[0].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y, parentObject.transform.position.z), Quaternion.identity);
+                Debug.Log("Boop");
                 break;
 
             case TowerTypes.Tower2:
-                Destroy(gameObject);
-                Instantiate(Towers[1].gameObject, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+                Destroy(parentObject);
+                Instantiate(Towers[1].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y, parentObject.transform.position.z), Quaternion.identity);
+                Debug.Log("Boop");
                 break;
 
             case TowerTypes.Tower3:
-                Destroy(gameObject);
-                Instantiate(Towers[2].gameObject, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+                Destroy(parentObject);
+                Instantiate(Towers[2].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y, parentObject.transform.position.z), Quaternion.identity);
+                Debug.Log("Boop");
                 break;
         }
     }

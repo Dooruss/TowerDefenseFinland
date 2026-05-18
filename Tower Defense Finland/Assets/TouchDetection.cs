@@ -9,6 +9,20 @@ public class TouchDetection : MonoBehaviour
 
     private Vector3 targetPoint;
 
+    public static TouchDetection instance;
+    public GameObject CurrentTower;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != null && instance != this)
+        {
+            Destroy(instance);
+        }
+    }
+
     private void Start()
     {
         lineRenderer = gameObject.GetComponent<LineRenderer>();
@@ -42,7 +56,7 @@ public class TouchDetection : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, maxDistance))
         {
             lineRenderer.SetPosition(1, hit.point);
-            Debug.Log("Geraakt object: " + hit.collider.gameObject.name);
+            //Debug.Log("Geraakt object: " + hit.collider.gameObject.name);
         }
         //draw raycast if nothing is hit
         else
@@ -71,10 +85,29 @@ public class TouchDetection : MonoBehaviour
             Debug.Log("Geraakt object: " + hit.collider.gameObject.name);
             //interface zoeken
             //functien aanroepen
-        }
-        else
-        {
-            targetPoint = cameraRay.GetPoint(maxDistance);
+            if (hit.collider.gameObject.tag == "Tower")
+            {
+                if (CurrentTower != null && CurrentTower.gameObject != hit.collider.gameObject)
+                {
+                    CurrentTower.GetComponent<EventClick>().ExitTower();
+                    CurrentTower = null;
+                }
+                CurrentTower = hit.collider.gameObject;
+                CurrentTower.GetComponent<EventClick>().ClickTower();
+            }
+
+            if (CurrentTower != null && hit.collider.gameObject.tag != "Tower" && hit.collider.gameObject.tag != "Tower Buttons")
+            {
+                {
+                    CurrentTower.GetComponent<EventClick>().ExitTower();
+                    CurrentTower = null;
+                }
+            }
+
+            else
+            {
+                targetPoint = cameraRay.GetPoint(maxDistance);
+            }
         }
     }
 }

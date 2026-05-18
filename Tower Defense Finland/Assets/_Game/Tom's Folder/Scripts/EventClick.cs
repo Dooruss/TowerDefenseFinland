@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
+public class EventClick : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private Material highLightedObject;
 
@@ -10,36 +10,7 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
      
     [SerializeField] private List<GameObject> Buttons;
 
-    public void OnPointerDown(PointerEventData eventData)
-    {
-
-    }
-    public void OnPointerUp(PointerEventData eventData)
-    {
-
-    }
-    public void OnPointerClick(PointerEventData eventData)
-    {
-
-        if (!ObjectClicked)
-        {
-            ObjectClicked = true;
-
-            for (int i = 0; i < Buttons.Count; i++)
-            {
-                Buttons[i].gameObject.SetActive(true);
-            }
-        }
-
-        if(ObjectClicked && eventData.pointerClick.gameObject != gameObject)
-        {
-            GetComponent<MeshRenderer>().material = null;
-            for (int i = 0; i < Buttons.Count; i++)
-            {
-                Buttons[i].gameObject.SetActive(false);
-            }
-        }
-    }
+    
     public void OnPointerEnter(PointerEventData eventData)
     {
         if(eventData.pointerEnter.gameObject.tag == "Tower")
@@ -53,7 +24,27 @@ public class EventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
         if (!ObjectClicked)
         {
             GetComponent<MeshRenderer>().material = null;
-            Debug.Log("test");
+        }
+    }
+
+    public void ClickTower()
+    {
+            for (int i = 0; i < Buttons.Count; i++)
+            {
+                Buttons[i].gameObject.SetActive(true);
+            }
+                TouchDetection.instance.CurrentTower = gameObject;
+                ObjectClicked = true;
+        Debug.Log("work");
+    }
+    public void ExitTower()
+    {
+        GetComponent<MeshRenderer>().material = null;
+        ObjectClicked = false;
+        TouchDetection.instance.CurrentTower = null;
+        for (int i = 0; i < Buttons.Count; i++)
+        {
+            Buttons[i].gameObject.SetActive(false);
         }
     }
 }

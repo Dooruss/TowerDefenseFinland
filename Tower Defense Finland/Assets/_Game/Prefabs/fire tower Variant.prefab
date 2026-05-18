@@ -100,4 +100,5 @@ MonoBehaviour:
   particles: {fileID: 340073947461882492}
   damage: 50
   EnemyList: []
+  fireball: {fileID: 0}
   fireArea: {fileID: 737485745487407726, guid: 5f5b628eb36409d4184c5a6ebd64376c, type: 3}
