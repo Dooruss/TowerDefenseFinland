@@ -11,6 +11,7 @@ public class MainTower : MonoBehaviour
     [Header("UI Elements")]
     [SerializeField] private Image HP_Bar;
     [SerializeField] private TextMeshProUGUI Text_HP_Amount;
+    [SerializeField] private GameObject FailureUI;
 
     private void Start()
     {
@@ -25,6 +26,8 @@ public class MainTower : MonoBehaviour
 
     void GameOver()
     {
-        //game overr
+        //game overr-
+        Scene_Manager.PauseGame();
+        FailureUI.SetActive(true);
     }
 }
