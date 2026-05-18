@@ -209,9 +209,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectEventClick
   Towers:
-  - {fileID: 6978276645352049597, guid: c97e0dafd8488b6488530680fe6010fe, type: 3}
-  - {fileID: 2546412833234446815, guid: 51680d9b7e804e048b71b0ccc48e3d61, type: 3}
-  - {fileID: 9205000826955150018, guid: 6a1036c5f53d12148b6665fda12041a6, type: 3}
+  - {fileID: 5892495129518311051, guid: b588ec6928acee0459258e23ac2d8a3d, type: 3}
+  - {fileID: 3968890415169617380, guid: b1e6dfd0ff09fb24ea92a333aec7759e, type: 3}
+  - {fileID: 2042022188023626680, guid: 9b077a6f2728a164cb682c36cdeff676, type: 3}
   towerTypes: 1
 --- !u!114 &498995290495601523
 MonoBehaviour:
@@ -354,9 +354,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectEventClick
   Towers:
-  - {fileID: 6978276645352049597, guid: c97e0dafd8488b6488530680fe6010fe, type: 3}
-  - {fileID: 2546412833234446815, guid: 51680d9b7e804e048b71b0ccc48e3d61, type: 3}
-  - {fileID: 9205000826955150018, guid: 6a1036c5f53d12148b6665fda12041a6, type: 3}
+  - {fileID: 5892495129518311051, guid: b588ec6928acee0459258e23ac2d8a3d, type: 3}
+  - {fileID: 3968890415169617380, guid: b1e6dfd0ff09fb24ea92a333aec7759e, type: 3}
+  - {fileID: 2042022188023626680, guid: 9b077a6f2728a164cb682c36cdeff676, type: 3}
   towerTypes: 2
 --- !u!114 &7153784660751377202
 MonoBehaviour:
@@ -519,9 +519,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectEventClick
   Towers:
-  - {fileID: 6978276645352049597, guid: c97e0dafd8488b6488530680fe6010fe, type: 3}
-  - {fileID: 2546412833234446815, guid: 51680d9b7e804e048b71b0ccc48e3d61, type: 3}
-  - {fileID: 9205000826955150018, guid: 6a1036c5f53d12148b6665fda12041a6, type: 3}
+  - {fileID: 5892495129518311051, guid: b588ec6928acee0459258e23ac2d8a3d, type: 3}
+  - {fileID: 3968890415169617380, guid: b1e6dfd0ff09fb24ea92a333aec7759e, type: 3}
+  - {fileID: 2042022188023626680, guid: 9b077a6f2728a164cb682c36cdeff676, type: 3}
   towerTypes: 0
 --- !u!114 &3890983097295973441
 MonoBehaviour:
@@ -714,6 +714,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EventClick
   highLightedObject: {fileID: 2100000, guid: 109ef85404911c7418ceeaad795e4512, type: 2}
   Buttons:
-  - {fileID: 5892495129518311051, guid: b588ec6928acee0459258e23ac2d8a3d, type: 3}
-  - {fileID: 3968890415169617380, guid: b1e6dfd0ff09fb24ea92a333aec7759e, type: 3}
-  - {fileID: 2042022188023626680, guid: 9b077a6f2728a164cb682c36cdeff676, type: 3}
+  - {fileID: 5638618864482629552}
+  - {fileID: 535336817816479691}
+  - {fileID: 2893425776366053086}

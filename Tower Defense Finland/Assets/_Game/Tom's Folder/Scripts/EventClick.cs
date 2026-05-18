@@ -35,6 +35,7 @@ public class EventClick : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
             }
                 TouchDetection.instance.CurrentTower = gameObject;
                 ObjectClicked = true;
+        Debug.Log("work");
     }
     public void ExitTower()
     {
