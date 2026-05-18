@@ -18,7 +18,8 @@ public class TowerShoot : MonoBehaviour
         lineRenderer.startWidth = 0.005f;
         lineRenderer.endWidth = 0.002f;
         lineRenderer.material = new Material(Shader.Find("Unlit/Color"));
-        lineRenderer.material.color = new Color(1f, 0.31f, 0.31f, 0.25f); // Soft red with subtle transparency
+        //lineRenderer.material.color = new Color(1f, 0.31f, 0.31f, 0.25f); // Soft red with subtle transparency
+        lineRenderer.material.color = new Color(1f, 0.31f, 0.31f, 0f); // Soft red with subtle transparency
 
     }
 
