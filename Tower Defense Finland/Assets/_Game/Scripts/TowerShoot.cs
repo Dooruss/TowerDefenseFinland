@@ -16,9 +16,8 @@ public class TowerShoot : MonoBehaviour
 
         // LineRenderer instellingen
         lineRenderer.startWidth = 0.005f;
-        lineRenderer.endWidth = 0.002f;
+        lineRenderer.endWidth = 0.005f;
         lineRenderer.material = new Material(Shader.Find("Unlit/Color"));
-        //lineRenderer.material.color = new Color(1f, 0.31f, 0.31f, 0.25f); // Soft red with subtle transparency
         lineRenderer.material.color = new Color(1f, 0.31f, 0.31f, 0f); // Soft red with subtle transparency
 
     }
@@ -30,10 +29,11 @@ public class TowerShoot : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance))
         {
+            Debug.Log("Hit Something");
             IEnemy enemy = hit.rigidbody.GetComponent<IEnemy>();
             if (enemy != null && timer > shootSpeed)
             {
-                Debug.Log("Hit Something");
+                Debug.Log("Hit Something and damaged!");
                 enemy.Kill(damage);
                 particles.Play();
                 timer = 0f;
