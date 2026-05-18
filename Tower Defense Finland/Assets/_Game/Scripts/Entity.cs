@@ -11,6 +11,7 @@ public class Entity : MonoBehaviour
     [SerializeField] protected int AttackPower;
     protected CinemachineDollyCart cartScript;
     protected EnemySpawning Spawner;
+    protected Rounds_System RoundSystem_Script;
     protected bool IsParalelTrack;
     [SerializeField] protected CinemachinePath[] AllPaths;
     protected MainTower MainTower;
@@ -20,6 +21,7 @@ public class Entity : MonoBehaviour
         Spawner = FindAnyObjectByType<EnemySpawning>();
         cartScript = GetComponent<CinemachineDollyCart>();
         MainTower = FindAnyObjectByType<MainTower>();
+        RoundSystem_Script = FindAnyObjectByType<Rounds_System>();
         CurrentHealth = MaxHealth;
         if (Spawner != null)
         {
@@ -48,6 +50,7 @@ public class Entity : MonoBehaviour
 
     virtual public void OnDeath(bool AttacksTower)
     {
+        RoundSystem_Script.EnemiesKilledThisRound += 1;
         Destroy(gameObject);
     }
 }
