@@ -32,11 +32,11 @@ public class FireTower : MonoBehaviour
                         IEnemy enemyInterface = enemy.GetComponent<IEnemy>();
                         Instantiate(fireArea, enemy.transform.position, enemy.transform.rotation);
 
-                        //throw fireball towards the fire area
-                        GameObject SpawnedFIREBALL = Instantiate(fireball, this.gameObject.transform);
-                        ShootSpeer script = SpawnedFIREBALL.GetComponent<ShootSpeer>();
-                        SpawnedFIREBALL.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
-                        script.objectToHit = enemy.transform;
+                        ////throw fireball towards the fire area
+                        //GameObject SpawnedFIREBALL = Instantiate(fireball, this.gameObject.transform);
+                        //ShootSpeer script = SpawnedFIREBALL.GetComponent<ShootSpeer>();
+                        //SpawnedFIREBALL.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+                        //script.objectToHit = enemy.transform;
 
                         //damage enemy
                         enemyInterface.Kill(damage);
