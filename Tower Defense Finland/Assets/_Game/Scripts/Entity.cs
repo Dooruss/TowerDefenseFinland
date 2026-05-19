@@ -1,6 +1,6 @@
 using Cinemachine;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public class Entity : MonoBehaviour
 {
@@ -16,6 +16,7 @@ public class Entity : MonoBehaviour
     protected bool IsParalelTrack;
     [SerializeField] protected CinemachinePath[] AllPaths;
     protected MainTower MainTower;
+    public Image HealthBarFill;
 
     private void Start()
     {
@@ -66,5 +67,9 @@ public class Entity : MonoBehaviour
     {
         IsMoving = true;
         cartScript.m_Speed = MovementSpeed;
+    }
+    virtual public void UpdateHealthBar()
+    {
+        HealthBarFill.fillAmount = (float)CurrentHealth / (float)MaxHealth;
     }
 }
