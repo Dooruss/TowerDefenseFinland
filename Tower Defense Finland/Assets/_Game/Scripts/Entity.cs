@@ -8,7 +8,7 @@ public class Entity : MonoBehaviour
     [SerializeField] protected int MaxHealth;
     public int CurrentHealth;
     [SerializeField] protected int MovementSpeed;
-    [SerializeField] protected int AttackPower;
+    [SerializeField] public int AttackPower;
     protected CinemachineDollyCart cartScript;
     protected EnemySpawning Spawner;
     protected Rounds_System RoundSystem_Script;
