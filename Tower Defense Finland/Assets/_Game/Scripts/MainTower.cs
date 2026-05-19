@@ -12,6 +12,14 @@ public class MainTower : MonoBehaviour
     [SerializeField] private Image HP_Bar;
     [SerializeField] private TextMeshProUGUI Text_HP_Amount;
     [SerializeField] private GameObject FailureUI;
+    public int money = 1000;
+
+    public static MainTower mainTower;
+
+    private void Awake()
+    {
+        
+    }
 
     private void Start()
     {
