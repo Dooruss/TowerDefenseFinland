@@ -15,20 +15,20 @@ public class ThorTowerUpgrades : TowerUpgradeButton
         
     }
 
-    public override void OnPointerClick(PointerEventData eventData)
-    {
-        switch (upgradeTypes)
-        {
-            case UpgradeTypes.SpeedAttack:
-                GetComponentInChildren<TowerShoot>().shootSpeed -= 0.1f;
-                Debug.Log("Boop");
-                break;
+    //public override void OnPointerClick(PointerEventData eventData)
+    //{
+    //    switch (upgradeTypes)
+    //    {
+    //        case UpgradeTypes.SpeedAttack:
+    //            GetComponentInChildren<TowerShoot>().shootSpeed -= 0.1f;
+    //            Debug.Log("Boop");
+    //            break;
 
-            case UpgradeTypes.DamageIncrease:
+    //        case UpgradeTypes.DamageIncrease:
 
-                GetComponentInChildren<TowerShoot>().damage += 5;
-                Debug.Log("Boop");
-                break;
-        }
-    }
+    //            GetComponentInChildren<TowerShoot>().damage += 5;
+    //            Debug.Log("Boop");
+    //            break;
+    //    }
+    //}
 }

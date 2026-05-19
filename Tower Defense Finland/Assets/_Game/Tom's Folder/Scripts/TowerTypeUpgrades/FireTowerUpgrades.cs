@@ -15,20 +15,20 @@ public class FireTowerUpgrades : TowerUpgradeButton
         
     }
 
-    public override void OnPointerClick(PointerEventData eventData)
-    {
-        switch (upgradeTypes)
-        {
-            case UpgradeTypes.SpeedAttack:
-                GetComponentInChildren<FireTower>().shootSpeed -= 0.5f;
-                Debug.Log("Boop");
-                break;
+    //public override void OnPointerClick(PointerEventData eventData)
+    //{
+    //    switch (upgradeTypes)
+    //    {
+    //        case UpgradeTypes.SpeedAttack:
+    //            GetComponentInChildren<FireTower>().shootSpeed -= 0.5f;
+    //            Debug.Log("Boop");
+    //            break;
 
-            case UpgradeTypes.DamageIncrease:
+    //        case UpgradeTypes.DamageIncrease:
 
-                GetComponentInChildren<FireTower>().damage += 5;
-                Debug.Log("Boop");
-                break;
-        }
-    }
+    //            GetComponentInChildren<FireTower>().damage += 5;
+    //            Debug.Log("Boop");
+    //            break;
+    //    }
+    //}
 }

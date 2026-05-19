@@ -15,20 +15,20 @@ public class AreaTowerUpgrade : TowerUpgradeButton
         
     }
 
-    public override void OnPointerClick(PointerEventData eventData)
-    {
-        switch (upgradeTypes)
-        {
-            case UpgradeTypes.SpeedAttack:
-                GetComponentInChildren<TowerShootAura>().shootSpeed -= 0.1f;
-                Debug.Log("Boop");
-                break;
+    //public override void OnPointerClick(PointerEventData eventData)
+    //{
+    //    switch (upgradeTypes)
+    //    {
+    //        case UpgradeTypes.SpeedAttack:
+    //            GetComponentInChildren<TowerShootAura>().shootSpeed -= 0.1f;
+    //            Debug.Log("Boop");
+    //            break;
 
-            case UpgradeTypes.DamageIncrease:
+    //        case UpgradeTypes.DamageIncrease:
                     
-                GetComponentInChildren<TowerShootAura>().damage += 5;
-                Debug.Log("Boop");
-                break;
-        }
-    }
+    //            GetComponentInChildren<TowerShootAura>().damage += 5;
+    //            Debug.Log("Boop");
+    //            break;
+    //    }
+    //}
 }

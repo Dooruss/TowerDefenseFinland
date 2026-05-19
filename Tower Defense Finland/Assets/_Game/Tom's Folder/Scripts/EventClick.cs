@@ -47,4 +47,12 @@ public class EventClick : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
             Buttons[i].gameObject.SetActive(false);
         }
     }
+
+    public void DestroyTower()
+    {
+        for (int i = 0; i < Buttons.Count; i++)
+        {
+            Destroy(Buttons[i]);
+        }
+    }
 }
