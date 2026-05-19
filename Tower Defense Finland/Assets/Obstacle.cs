@@ -27,8 +27,8 @@ public class Obstacle : MonoBehaviour
             foreach (GameObject enemy in EnemyList)
             {
                 //stop enemy
-                
                 Enemy_1 enemyScipt = enemy.GetComponent<Enemy_1>();
+                enemyScipt.StopEnemy();
                 CurrentHealth -= enemyScipt.AttackPower;
                 //Debug.Log("Damaged the obstaicle with " + enemyScipt.AttackPower + "By" +enemy.name);
             }
@@ -36,7 +36,12 @@ public class Obstacle : MonoBehaviour
         }
         if (CurrentHealth <= 0)
         {
-            Destroy(this.gameObject);
+            foreach (GameObject enemy in EnemyList)
+            {
+                Enemy_1 enemyScipt = enemy.GetComponent<Enemy_1>();
+                enemyScipt.ResumeEnemy();
+            }
+                Destroy(this.gameObject);
         }
     }
 
