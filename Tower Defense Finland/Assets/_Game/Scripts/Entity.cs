@@ -36,6 +36,7 @@ public class Entity : MonoBehaviour
             }
             else { cartScript.m_Path = FindAnyObjectByType<CinemachinePath>(); }
         }
+        ExtraStartFunc();
     }
 
     virtual public void CheckDeath()
@@ -71,5 +72,10 @@ public class Entity : MonoBehaviour
     virtual public void UpdateHealthBar()
     {
         HealthBarFill.fillAmount = (float)CurrentHealth / (float)MaxHealth;
+    }
+
+    virtual public void ExtraStartFunc()
+    {
+        // incase u want to add extra functionality to the enemy without making a new script
     }
 }
