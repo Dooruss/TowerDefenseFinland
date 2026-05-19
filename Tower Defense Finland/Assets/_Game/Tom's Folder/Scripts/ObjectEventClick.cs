@@ -36,19 +36,19 @@ public class ObjectEventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHa
         switch (towerTypes)
         {
             case TowerTypes.Tower1:
-                Instantiate(Towers[0].gameObject, parentObject.transform.position, parentObject.transform.rotation);
+                Instantiate(Towers[0].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y + 5, parentObject.transform.position.z), parentObject.transform.rotation);
                 Destroy(parentObject);
                 Debug.Log("Boop");
                 break;
 
             case TowerTypes.Tower2:
-                Instantiate(Towers[1].gameObject, parentObject.transform.position, parentObject.transform.rotation);
+                Instantiate(Towers[1].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y + 5.5f, parentObject.transform.position.z), parentObject.transform.rotation);
                 Destroy(parentObject);
                 Debug.Log("Boop");
                 break;
 
             case TowerTypes.Tower3:
-                Instantiate(Towers[2].gameObject, parentObject.transform.position, parentObject.transform.rotation);
+                Instantiate(Towers[2].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y + 5.5f, parentObject.transform.position.z), parentObject.transform.rotation);
                 Destroy(parentObject);
                 Debug.Log("Boop");
                 break;
