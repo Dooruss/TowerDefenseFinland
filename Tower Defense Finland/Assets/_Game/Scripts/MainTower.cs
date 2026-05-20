@@ -31,7 +31,7 @@ public class MainTower : MonoBehaviour
         if (MainCurrentHealth <= 0) { GameOver(); }
         HP_Bar.fillAmount = MainCurrentHealth / MaxHealth;
         Text_HP_Amount.text = $"{MainCurrentHealth}/{MaxHealth}";
-        Text_Money_Amount.text = $"{money}";
+        Text_Money_Amount.text = $" $: {money}";
     }
 
     void GameOver()

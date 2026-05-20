@@ -7602,6 +7602,7 @@ MonoBehaviour:
   MainCurrentHealth: 0
   HP_Bar: {fileID: 954591162}
   Text_HP_Amount: {fileID: 847317906}
+  Text_Money_Amount: {fileID: 475287155}
   FailureUI: {fileID: 1010015769}
   money: 1000
 --- !u!4 &2097879184

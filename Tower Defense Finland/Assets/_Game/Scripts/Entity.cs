@@ -17,6 +17,7 @@ public class Entity : MonoBehaviour
     [SerializeField] protected CinemachinePath[] AllPaths;
     protected MainTower MainTower;
     public Image HealthBarFill;
+    protected int AddedMoneyOnDeath = 100;
 
     private void Start()
     {
@@ -57,7 +58,7 @@ public class Entity : MonoBehaviour
         RoundSystem_Script.EnemiesKilledThisRound += 1;
         if (AttacksTower == false)
         {
-            MainTower.money += 100;
+            MainTower.money += AddedMoneyOnDeath;
         }
         Destroy(gameObject);
     }
