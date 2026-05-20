@@ -35,7 +35,7 @@ public class Enemy_2 : Entity, IEnemy
     public override void ExtraStartFunc()
     {
        // alltowers being put in a array
-        AllTowers = FindObjectsOfType<TowerShoot>();
+       // AllTowers = FindObjectsOfType<TowerShoot>();
     }
 
 }

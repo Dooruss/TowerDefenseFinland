@@ -55,6 +55,10 @@ public class Entity : MonoBehaviour
     virtual public void OnDeath(bool AttacksTower)
     {
         RoundSystem_Script.EnemiesKilledThisRound += 1;
+        if (AttacksTower == false)
+        {
+            MainTower.money += 100;
+        }
         Destroy(gameObject);
     }
 
