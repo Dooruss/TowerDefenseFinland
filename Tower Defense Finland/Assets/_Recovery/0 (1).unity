@@ -4868,10 +4868,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 651347875848895996, guid: fe8329d600f8c7b45acb1b197ea9aa8e, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 5780533251986518678, guid: fe8329d600f8c7b45acb1b197ea9aa8e, type: 3}
       propertyPath: m_Name
       value: Craft Board (3)
