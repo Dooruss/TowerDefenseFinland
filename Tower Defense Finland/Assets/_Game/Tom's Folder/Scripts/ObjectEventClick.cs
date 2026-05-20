@@ -31,21 +31,19 @@ public class ObjectEventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHa
         switch (towerTypes)
         {
             case TowerTypes.Tower1:
-                Instantiate(Towers[0].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y + 5, parentObject.transform.position.z), Quaternion.Euler(parentObject.transform.rotation.eulerAngles.x, parentObject.transform.rotation.eulerAngles.y + 90, parentObject.transform.rotation.eulerAngles.z));
-                Destroy(parentObject);
+                Instantiate(Towers[0].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y + 5, parentObject.transform.position.z), Quaternion.Euler(parentObject.GetComponent<EventClick>().TowerRotation));
                 Destroy(GetComponentInParent<Canvas>().gameObject);
                 Debug.Log("Boop");
                 break;
 
             case TowerTypes.Tower2:
-                Instantiate(Towers[1].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y + 5.5f, parentObject.transform.position.z), Quaternion.Euler(parentObject.transform.rotation.eulerAngles.x, parentObject.transform.rotation.eulerAngles.y + 90, parentObject.transform.rotation.eulerAngles.z));
-                Destroy(parentObject);
+                Instantiate(Towers[1].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y + 5.5f, parentObject.transform.position.z), Quaternion.Euler(parentObject.GetComponent<EventClick>().TowerRotation));
                 Destroy(GetComponentInParent<Canvas>().gameObject);
                 Debug.Log("Boop");
                 break;
 
             case TowerTypes.Tower3:
-                Instantiate(Towers[2].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y + 5.5f, parentObject.transform.position.z), Quaternion.Euler(parentObject.transform.rotation.eulerAngles.x, parentObject.transform.rotation.eulerAngles.y + 90, parentObject.transform.rotation.eulerAngles.z));
+                Instantiate(Towers[2].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y + 5.5f, parentObject.transform.position.z), Quaternion.Euler(parentObject.GetComponent<EventClick>().TowerRotation));
                 Destroy(parentObject);
                 Destroy(GetComponentInParent<Canvas>().gameObject);
                 Debug.Log("Boop");

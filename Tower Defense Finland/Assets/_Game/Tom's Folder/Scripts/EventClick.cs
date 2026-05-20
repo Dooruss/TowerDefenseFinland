@@ -10,7 +10,9 @@ public class EventClick : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
      
     [SerializeField] private List<GameObject> Buttons;
 
-    
+    public Vector3 TowerRotation;
+
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         if(eventData.pointerEnter.gameObject.tag == "Tower")
