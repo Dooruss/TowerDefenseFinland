@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class MakeBomb : MonoBehaviour
 {
@@ -12,9 +13,13 @@ public class MakeBomb : MonoBehaviour
     private Vector3 targetPoint;
     [SerializeField] private float PressedTimer;
     [SerializeField] GameObject bombPrefab;
+    [SerializeField] float ButtonTime;
     //0 - not pressed
     //1 - Select place to spawn bomb and nstance there
     //2 - explode bomb
+
+    [SerializeField] Image img1;
+    [SerializeField] Image img2;
 
     private void Start()
     {
@@ -29,19 +34,27 @@ public class MakeBomb : MonoBehaviour
     }
     private void Update()
     {
+        ButtonTime += Time.deltaTime;
         if(pressed == true)
         {
             PressedTimer += Time.deltaTime;
             UpdateLaser();
             CheckForTouchInput();
         }
+
+        img1.fillAmount = ButtonTime /5f;
+        img2.fillAmount = ButtonTime / 5f;
     }
 
     public void PressBombButton()
     {
-        pressed = true;
+        if (ButtonTime > 5f)
+        {
+            pressed = true;
+            ButtonTime = 0f;
+        }
     }
-
+    
 
 
     private void UpdateLaser()
