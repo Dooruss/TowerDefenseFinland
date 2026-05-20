@@ -11,6 +11,7 @@ public class MainTower : MonoBehaviour
     [Header("UI Elements")]
     [SerializeField] private Image HP_Bar;
     [SerializeField] private TextMeshProUGUI Text_HP_Amount;
+    [SerializeField] private TextMeshProUGUI Text_Money_Amount;
     [SerializeField] private GameObject FailureUI;
     public int money = 1000;
 
@@ -30,6 +31,7 @@ public class MainTower : MonoBehaviour
         if (MainCurrentHealth <= 0) { GameOver(); }
         HP_Bar.fillAmount = MainCurrentHealth / MaxHealth;
         Text_HP_Amount.text = $"{MainCurrentHealth}/{MaxHealth}";
+        Text_Money_Amount.text = $"{money}";
     }
 
     void GameOver()
