@@ -17,11 +17,6 @@ public class MainTower : MonoBehaviour
 
     public static MainTower mainTower;
 
-    private void Awake()
-    {
-
-    }
-
     private void Start()
     {
         MainCurrentHealth = MaxHealth;
@@ -43,6 +38,9 @@ public class MainTower : MonoBehaviour
 
     public void RemoveMoney(int MoneyToRemove)
     {
-        money -= MoneyToRemove;
+        if (money >= MoneyToRemove)
+        {
+            money -= MoneyToRemove;
+        }
     }
 }
