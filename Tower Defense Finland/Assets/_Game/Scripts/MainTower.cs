@@ -19,7 +19,7 @@ public class MainTower : MonoBehaviour
 
     private void Awake()
     {
-        
+
     }
 
     private void Start()
@@ -39,5 +39,10 @@ public class MainTower : MonoBehaviour
         //game overr-
         Scene_Manager.PauseGame();
         FailureUI.SetActive(true);
+    }
+
+    public void RemoveMoney(int MoneyToRemove)
+    {
+        money -= MoneyToRemove;
     }
 }
