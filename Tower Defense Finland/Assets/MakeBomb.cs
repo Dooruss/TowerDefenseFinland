@@ -21,6 +21,8 @@ public class MakeBomb : MonoBehaviour
     [SerializeField] Image img1;
     [SerializeField] Image img2;
 
+    [SerializeField] mouseManager mouseManager;
+
     private void Start()
     {
         lineRenderer = gameObject.GetComponent<LineRenderer>();
@@ -44,6 +46,15 @@ public class MakeBomb : MonoBehaviour
 
         img1.fillAmount = ButtonTime /5f;
         img2.fillAmount = ButtonTime / 5f;
+
+        if(pressed == true)
+        {
+            mouseManager.useCustomCursor = true;
+        }
+        else
+        {
+            mouseManager.useCustomCursor = false;
+        }
     }
 
     public void PressBombButton()
