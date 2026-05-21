@@ -110,6 +110,7 @@ MonoBehaviour:
   timer: 0
   shootSpeed: 0.5
   particles: {fileID: 4976863913535761670}
+  damage: 50
 --- !u!120 &2630446119555009226
 LineRenderer:
   serializedVersion: 3
@@ -232,7 +233,7 @@ GameObject:
   - component: {fileID: 7863185300536520673}
   - component: {fileID: 6119369663092901665}
   - component: {fileID: 8741814617685729464}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}

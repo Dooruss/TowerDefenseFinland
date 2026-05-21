@@ -537,7 +537,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &2086616256508412563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,6 +777,10 @@ PrefabInstance:
       value: SignBO (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cff2fc66f94878e47a4021618c06b397, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cff2fc66f94878e47a4021618c06b397, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -820,6 +824,7 @@ MonoBehaviour:
   - {fileID: 1785914965274832729}
   - {fileID: 9140563417794009938}
   - {fileID: 462759631475082979}
+  TowerRotation: {x: 0, y: 0, z: 0}
 --- !u!65 &4578017943878593076
 BoxCollider:
   m_ObjectHideFlags: 0

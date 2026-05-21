@@ -11,6 +11,28 @@ public class TouchDetection : MonoBehaviour
 
     public static TouchDetection instance;
     public GameObject CurrentTower;
+
+    public GameObject[] allCurrentTowerChildren;
+
+    [SerializeField] private GameObject shop;
+
+    [SerializeField] private GameObject shopPlacement;
+
+    [SerializeField] private int chosenTower;
+
+    [SerializeField] private LayerMask TowerLayer;
+
+    private enum TypeTowers
+    {
+        UnderConstructionTower,
+        ThorTower,
+        AoeTower,
+        DotTower
+    }
+
+    [SerializeField] private TypeTowers typeTowers;
+
+
     private void Awake()
     {
         if (instance == null)
@@ -79,25 +101,106 @@ public class TouchDetection : MonoBehaviour
         Ray cameraRay = Camera.main.ScreenPointToRay(screenPos);
 
         //logic here
-        if (Physics.Raycast(cameraRay, out RaycastHit hit, maxDistance))
+        if (Physics.Raycast(cameraRay, out RaycastHit hit, maxDistance, TowerLayer))
         {
             targetPoint = hit.point;
-            Debug.Log("Geraakt object: " + hit.collider.gameObject.name);
             //interface zoeken
             //functien aanroepen
-            if (hit.collider.gameObject.tag == "Tower")
+
+            if(hit.collider.gameObject.tag != "Tower" && hit.collider.gameObject.transform.parent.gameObject.tag == "Tower")
             {
+                CurrentTower = hit.collider.gameObject.transform.parent.gameObject;
+                Debug.Log("Geraakt object: " + hit.collider.gameObject.transform.parent.gameObject);
+
+
+                Debug.Log("Geraakt object: " + hit.collider.gameObject.transform.parent.gameObject);
                 if (CurrentTower != null && CurrentTower.gameObject != hit.collider.gameObject)
                 {
-                    CurrentTower.GetComponent<EventClick>().ExitTower();
+                    if (CurrentTower.GetComponent<EventClick>() != null)
+                    {
+                        CurrentTower.GetComponent<EventClick>().ExitTower();
+                    }
                     CurrentTower = null;
                 }
+
                 CurrentTower = hit.collider.gameObject;
-                CurrentTower.GetComponent<EventClick>().ClickTower();
+
+                allCurrentTowerChildren = new GameObject[CurrentTower.transform.childCount];
+
+                for (int i = 0; i < allCurrentTowerChildren.Length; i++)
+                {
+                    allCurrentTowerChildren[i] = CurrentTower.transform.GetChild(i).gameObject;
+                }
+
+                for (int j = 0; j < typeTowers.GetType().GetEnumValues().Length; j++)
+                {
+                    if (allCurrentTowerChildren[0].gameObject.tag == typeTowers.GetType().GetEnumName(j))
+                    {
+                        chosenTower = j;
+                        typeTowers = (TypeTowers)chosenTower;
+                        break;
+                    }
+                    else
+                    {
+                        typeTowers = TypeTowers.UnderConstructionTower;
+                    }
+                }
+
+                if (typeTowers == TypeTowers.UnderConstructionTower)
+                {
+                    if (CurrentTower.GetComponent<EventClick>() != null)
+                    {
+                        CurrentTower.GetComponent<EventClick>().ClickTower();
+                    }
+                }
+            }
+            else if (hit.collider.gameObject.tag == "Tower")
+            {
+                Debug.Log("Geraakt object: " + hit.collider.gameObject);
+                if (CurrentTower != null && CurrentTower.gameObject != hit.collider.gameObject)
+                {
+                    if(CurrentTower.GetComponent<EventClick>() != null)
+                    {
+                        CurrentTower.GetComponent<EventClick>().ExitTower();
+                    }
+                    CurrentTower = null;
+                }
+
+                CurrentTower = hit.collider.gameObject;
+
+                allCurrentTowerChildren = new GameObject[CurrentTower.transform.childCount];
+
+                for (int i = 0; i < allCurrentTowerChildren.Length; i++)
+                {
+                    allCurrentTowerChildren[i] = CurrentTower.transform.GetChild(i).gameObject;
+                }
+
+                for (int j = 0; j < typeTowers.GetType().GetEnumValues().Length; j++)
+                {
+                    if (allCurrentTowerChildren[0].gameObject.tag == typeTowers.GetType().GetEnumName(j))
+                    {
+                        chosenTower = j;
+                        typeTowers = (TypeTowers)chosenTower;
+                        break;
+                    }
+                    else
+                    {
+                        typeTowers = TypeTowers.UnderConstructionTower;
+                    }
+                }
+
+                if (typeTowers == TypeTowers.UnderConstructionTower)
+                {
+                    if (CurrentTower.GetComponent<EventClick>() != null)
+                    {
+                        CurrentTower.GetComponent<EventClick>().ClickTower();
+                    }
+                }
             }
 
             if (CurrentTower != null && hit.collider.gameObject.tag != "Tower" && hit.collider.gameObject.tag != "Tower Buttons")
             {
+                if(CurrentTower.GetComponent<EventClick>() != null)
                 {
                     CurrentTower.GetComponent<EventClick>().ExitTower();
                     CurrentTower = null;

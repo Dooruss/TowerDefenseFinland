@@ -4908,7 +4908,7 @@ GameObject:
   - component: {fileID: 8668131772671959836}
   m_Layer: 0
   m_Name: area
-  m_TagString: Untagged
+  m_TagString: AoeTower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5035,6 +5035,10 @@ PrefabInstance:
     - target: {fileID: 7067680593831666069, guid: 4d73649ea19a5eb468acbf652485bd97, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7067680593831666069, guid: 4d73649ea19a5eb468acbf652485bd97, type: 3}
+      propertyPath: m_TagString
+      value: Tower
       objectReference: {fileID: 0}
     - target: {fileID: 8741814617685729464, guid: 4d73649ea19a5eb468acbf652485bd97, type: 3}
       propertyPath: m_IsTrigger

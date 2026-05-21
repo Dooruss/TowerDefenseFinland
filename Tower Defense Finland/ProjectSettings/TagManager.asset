@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - Tower
   - Tower Buttons
+  - ThorTower
+  - AoeTower
+  - DotTower
   layers:
   - Default
   - TransparentFX

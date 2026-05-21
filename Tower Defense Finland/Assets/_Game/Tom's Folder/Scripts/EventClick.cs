@@ -37,7 +37,6 @@ public class EventClick : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
             }
                 TouchDetection.instance.CurrentTower = gameObject;
                 ObjectClicked = true;
-        Debug.Log("work");
     }
     public void ExitTower()
     {
@@ -47,14 +46,6 @@ public class EventClick : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         for (int i = 0; i < Buttons.Count; i++)
         {
             Buttons[i].gameObject.SetActive(false);
-        }
-    }
-
-    public void DestroyTower()
-    {
-        for (int i = 0; i < Buttons.Count; i++)
-        {
-            Destroy(Buttons[i]);
         }
     }
 }
