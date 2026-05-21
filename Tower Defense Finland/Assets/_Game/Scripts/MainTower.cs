@@ -17,11 +17,6 @@ public class MainTower : MonoBehaviour
 
     public static MainTower mainTower;
 
-    private void Awake()
-    {
-        
-    }
-
     private void Start()
     {
         MainCurrentHealth = MaxHealth;
@@ -31,7 +26,7 @@ public class MainTower : MonoBehaviour
         if (MainCurrentHealth <= 0) { GameOver(); }
         HP_Bar.fillAmount = MainCurrentHealth / MaxHealth;
         Text_HP_Amount.text = $"{MainCurrentHealth}/{MaxHealth}";
-        Text_Money_Amount.text = $"{money}";
+        Text_Money_Amount.text = $" $: {money}";
     }
 
     void GameOver()
@@ -39,5 +34,13 @@ public class MainTower : MonoBehaviour
         //game overr-
         Scene_Manager.PauseGame();
         FailureUI.SetActive(true);
+    }
+
+    public void RemoveMoney(int MoneyToRemove)
+    {
+        if (money >= MoneyToRemove)
+        {
+            money -= MoneyToRemove;
+        }
     }
 }

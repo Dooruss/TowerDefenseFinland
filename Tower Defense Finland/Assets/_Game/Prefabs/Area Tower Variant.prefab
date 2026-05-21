@@ -4973,7 +4973,7 @@ MonoBehaviour:
   timer: 0
   shootSpeed: 3
   particles: {fileID: 3457291054488392736}
-  damage: 50
+  damage: 10
   EnemyList: []
   speer: {fileID: 3510095522160170707, guid: dd378252fb7da1a48b324c6a264e7b04, type: 3}
 --- !u!1001 &9098338124309666349
