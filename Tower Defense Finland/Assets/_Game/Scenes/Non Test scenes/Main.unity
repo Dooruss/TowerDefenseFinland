@@ -1172,6 +1172,14 @@ MonoBehaviour:
   maxDistance: 500
   rotationSpeed: 10
   CurrentTower: {fileID: 0}
+  allCurrentTowerChildren: []
+  shop: {fileID: 0}
+  shopPlacement: {fileID: 0}
+  chosenTower: 0
+  TowerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  typeTowers: 0
 --- !u!1001 &130457273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1291,6 +1299,10 @@ PrefabInstance:
     - target: {fileID: 3473496327174879916, guid: a8792d985e3411640bdf0e2094b17511, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758697851329033956, guid: a8792d985e3411640bdf0e2094b17511, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7127115586184666182, guid: a8792d985e3411640bdf0e2094b17511, type: 3}
       propertyPath: TowerRotation.y
@@ -1785,7 +1797,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7fbd78c03de889d4994d29e4e4afdc4f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cd25cc11478ee9641a0814d495e9dd9d, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3721,6 +3733,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1395626730869307043, guid: c41e65b65af2bcd4eb00678e236d01db, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2189928048501783888, guid: c41e65b65af2bcd4eb00678e236d01db, type: 3}
       propertyPath: m_Name
       value: FireBall
@@ -3733,6 +3749,10 @@ PrefabInstance:
       propertyPath: m_Type
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3848041637173150279, guid: c41e65b65af2bcd4eb00678e236d01db, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 41cdc7abfecd9ca4ca537d1018e061ab, type: 3}
     - target: {fileID: 3848041637173150279, guid: c41e65b65af2bcd4eb00678e236d01db, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -3785,6 +3805,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7739703607994190422, guid: c41e65b65af2bcd4eb00678e236d01db, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8725769943770968049, guid: c41e65b65af2bcd4eb00678e236d01db, type: 3}
       propertyPath: m_Type
       value: 3
@@ -3795,7 +3819,7 @@ PrefabInstance:
       objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 8725769943770968049, guid: c41e65b65af2bcd4eb00678e236d01db, type: 3}
       propertyPath: m_Color.a
-      value: 0.30980393
+      value: 0.10980392
       objectReference: {fileID: 0}
     - target: {fileID: 8725769943770968049, guid: c41e65b65af2bcd4eb00678e236d01db, type: 3}
       propertyPath: m_FillAmount
@@ -3959,6 +3983,10 @@ PrefabInstance:
     - target: {fileID: 3473496327174879916, guid: a8792d985e3411640bdf0e2094b17511, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5758697851329033956, guid: a8792d985e3411640bdf0e2094b17511, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7127115586184666182, guid: a8792d985e3411640bdf0e2094b17511, type: 3}
       propertyPath: TowerRotation.y
@@ -5717,7 +5745,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 589e283717458e54cbf244db86b3a7d9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9dbd686b153e45f499fbf6b269a9ed48, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -5,7 +5,9 @@ public class FireBall : MonoBehaviour
     [SerializeField] public Vector3 boxSize = new Vector3(5, 5, 5); 
     public bool explode = false;
     public bool exploded = false;
+    private bool hasExploded = false;
     public float timer;
+    public int BombDamage = 10;
     [SerializeField] ParticleSystem particles;
 
 
@@ -20,7 +22,7 @@ public class FireBall : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        else if (explode)
+        else if (explode && exploded == false)
         {
             CheckCollisions();
             particles.Play();
@@ -33,8 +35,11 @@ public class FireBall : MonoBehaviour
             timer = 0;
 
         }
-        
+
+
     }
+
+    
     public void CheckCollisions()
     {
         //make a list called hits that checks for triggers and other colliders with the tag enemy 
@@ -52,7 +57,7 @@ public class FireBall : MonoBehaviour
             Enemy_1 enemyScipt = hit.GetComponent<Enemy_1>();
             if (enemyScipt != null)
             {
-                enemyScipt.CurrentHealth -= 50;
+                enemyScipt.CurrentHealth -= BombDamage;
                 Debug.Log(enemyScipt.gameObject.name + "was hit");
             }
         }
