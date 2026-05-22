@@ -15,7 +15,19 @@ public class MainTower : MonoBehaviour
     [SerializeField] private GameObject FailureUI;
     public int money = 1000;
 
-    public static MainTower mainTower;
+    public static MainTower instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != null && instance != this)
+        {
+            Destroy(instance);
+        }
+    }
 
     private void Start()
     {

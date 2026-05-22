@@ -22,7 +22,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4086937972992910499
 RectTransform:
   m_ObjectHideFlags: 0
@@ -106,10 +106,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjectEventClick
   Towers:
   - {fileID: 5892495129518311051, guid: b588ec6928acee0459258e23ac2d8a3d, type: 3}
-  - {fileID: 2847265901302201101, guid: b1e6dfd0ff09fb24ea92a333aec7759e, type: 3}
   - {fileID: 8251337238752929660, guid: 9b077a6f2728a164cb682c36cdeff676, type: 3}
+  - {fileID: 2847265901302201101, guid: b1e6dfd0ff09fb24ea92a333aec7759e, type: 3}
   parentObject: {fileID: 2521529044417291683}
-  towerTypes: 2
+  towerPrice: {fileID: 11400000, guid: 36cdb4ed81c0bcf4e8f79242c3e99786, type: 2}
+  towerTypes: 1
 --- !u!114 &4919657910848632071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,7 +189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6138726703922240134
 RectTransform:
   m_ObjectHideFlags: 0
@@ -272,9 +273,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjectEventClick
   Towers:
   - {fileID: 5892495129518311051, guid: b588ec6928acee0459258e23ac2d8a3d, type: 3}
-  - {fileID: 2847265901302201101, guid: b1e6dfd0ff09fb24ea92a333aec7759e, type: 3}
   - {fileID: 8251337238752929660, guid: 9b077a6f2728a164cb682c36cdeff676, type: 3}
+  - {fileID: 2847265901302201101, guid: b1e6dfd0ff09fb24ea92a333aec7759e, type: 3}
   parentObject: {fileID: 2521529044417291683}
+  towerPrice: {fileID: 11400000, guid: 36cdb4ed81c0bcf4e8f79242c3e99786, type: 2}
   towerTypes: 0
 --- !u!114 &2959886861440432190
 MonoBehaviour:
@@ -537,7 +539,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &2086616256508412563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -576,7 +578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6683735002955288468
 RectTransform:
   m_ObjectHideFlags: 0
@@ -660,10 +662,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjectEventClick
   Towers:
   - {fileID: 5892495129518311051, guid: b588ec6928acee0459258e23ac2d8a3d, type: 3}
-  - {fileID: 2847265901302201101, guid: b1e6dfd0ff09fb24ea92a333aec7759e, type: 3}
   - {fileID: 8251337238752929660, guid: 9b077a6f2728a164cb682c36cdeff676, type: 3}
+  - {fileID: 2847265901302201101, guid: b1e6dfd0ff09fb24ea92a333aec7759e, type: 3}
   parentObject: {fileID: 2521529044417291683}
-  towerTypes: 1
+  towerPrice: {fileID: 11400000, guid: 36cdb4ed81c0bcf4e8f79242c3e99786, type: 2}
+  towerTypes: 2
 --- !u!114 &8911711536300045725
 MonoBehaviour:
   m_ObjectHideFlags: 0
