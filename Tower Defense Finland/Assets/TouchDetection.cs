@@ -107,13 +107,12 @@ public class TouchDetection : MonoBehaviour
             //interface zoeken
             //functien aanroepen
 
+            Debug.Log("Geraakt object: " + hit.collider.gameObject.transform.parent.gameObject);
             if (hit.collider.gameObject.tag != "Tower" && hit.collider.gameObject.transform.parent.gameObject.tag == "Tower" && hit.collider.gameObject.GetComponent<ObjectEventClick>() == null)
             {
                 CurrentTower = hit.collider.gameObject.transform.parent.gameObject;
-                Debug.Log("Geraakt object: " + hit.collider.gameObject.transform.parent.gameObject);
 
 
-                Debug.Log("Geraakt object: " + hit.collider.gameObject.transform.parent.gameObject);
                 if (CurrentTower != null && CurrentTower.gameObject != hit.collider.gameObject)
                 {
                     if (CurrentTower.GetComponent<EventClick>() != null)

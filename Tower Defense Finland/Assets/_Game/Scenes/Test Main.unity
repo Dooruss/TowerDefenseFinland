@@ -2088,7 +2088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7127115586184666182, guid: a8792d985e3411640bdf0e2094b17511, type: 3}
       propertyPath: TowerRotation.y
-      value: -45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8824731275967340730, guid: a8792d985e3411640bdf0e2094b17511, type: 3}
       propertyPath: m_Name
