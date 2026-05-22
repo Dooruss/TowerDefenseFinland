@@ -108,6 +108,7 @@ MonoBehaviour:
   explode: 0
   exploded: 0
   timer: 0
+  BombDamage: 50
   particles: {fileID: 6853912212727043000}
 --- !u!1 &7516509547700842978
 GameObject:
