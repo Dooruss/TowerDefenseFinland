@@ -38,9 +38,6 @@ public class MainTower : MonoBehaviour
 
     public void RemoveMoney(int MoneyToRemove)
     {
-        if (money >= MoneyToRemove)
-        {
             money -= MoneyToRemove;
-        }
     }
 }
