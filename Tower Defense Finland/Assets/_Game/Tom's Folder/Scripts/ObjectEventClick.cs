@@ -9,11 +9,13 @@ public class ObjectEventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHa
 
     [SerializeField] private GameObject parentObject;
 
+    [SerializeField] private TowerPrice towerPrice;
+
     private enum TowerTypes
     {
-        Tower1,
-        Tower2,
-        Tower3
+        ThorTower,
+        FireTower,
+        AreaTower
     }
 
     [SerializeField] private TowerTypes towerTypes;
@@ -30,20 +32,23 @@ public class ObjectEventClick : MonoBehaviour, IPointerDownHandler, IPointerUpHa
     {
         switch (towerTypes)
         {
-            case TowerTypes.Tower1:
+            case TowerTypes.ThorTower:
                 Instantiate(Towers[0].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y + 5, parentObject.transform.position.z), Quaternion.Euler(parentObject.GetComponent<EventClick>().TowerRotation));
                 Destroy(GetComponentInParent<Canvas>().gameObject);
+                MainTower.instance.money -= towerPrice.thorTowerPrice;
                 break;
 
-            case TowerTypes.Tower2:
+            case TowerTypes.AreaTower:
                 Instantiate(Towers[1].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y + 5.5f, parentObject.transform.position.z), Quaternion.Euler(parentObject.GetComponent<EventClick>().TowerRotation));
                 Destroy(GetComponentInParent<Canvas>().gameObject);
+                MainTower.instance.money -= towerPrice.fireTowerPrice;
                 break;
 
-            case TowerTypes.Tower3:
+            case TowerTypes.FireTower:
                 Instantiate(Towers[2].gameObject, new Vector3(parentObject.transform.position.x, parentObject.transform.position.y + 5.5f, parentObject.transform.position.z), Quaternion.Euler(parentObject.GetComponent<EventClick>().TowerRotation));
                 Destroy(parentObject);
                 Destroy(GetComponentInParent<Canvas>().gameObject);
+                MainTower.instance.money -= towerPrice.areaTowerPrice;
                 break;
         }
     }
