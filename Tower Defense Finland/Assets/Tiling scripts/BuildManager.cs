@@ -7,7 +7,8 @@ public class BuildManager : MonoBehaviour
     public GameObject AOEtower;
 
     public enum ToBuild
-    {   None,
+    {
+        None,
         ThorTower,
         FireTower,
         AOEtower
@@ -29,6 +30,12 @@ public class BuildManager : MonoBehaviour
                 return AOEtower;
         }
         return null;
+
+    }
+
+    public void SetState(int tower)
+    {
+        TowerToBuild = (ToBuild)tower;
         
     }
 }
