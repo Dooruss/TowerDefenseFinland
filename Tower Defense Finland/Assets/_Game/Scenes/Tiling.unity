@@ -31528,6 +31528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 551ab1c40640984408bd77b1f2d13f10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HurtMainTower
+  gameManager: {fileID: 578261564}
 --- !u!65 &1880973667
 BoxCollider:
   m_ObjectHideFlags: 0

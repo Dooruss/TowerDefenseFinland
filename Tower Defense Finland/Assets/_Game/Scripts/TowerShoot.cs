@@ -1,5 +1,10 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
+using UnityEngine.Rendering;
 
 public class TowerShoot : MonoBehaviour
 {
@@ -9,6 +14,12 @@ public class TowerShoot : MonoBehaviour
     public float shootSpeed = 0.5f;
     public ParticleSystem particles;
     public int damage = 50;
+
+    [Header("Rotation")]
+    [SerializeField] GameObject Base;
+    [SerializeField] GameObject target;
+    float strength = 4f;
+    public List<GameObject> EnemyList;
     void Start()
     {
         // Haal of voeg een LineRenderer toe aan de controller
@@ -35,10 +46,24 @@ public class TowerShoot : MonoBehaviour
             {
                 Debug.Log("Hit Something and damaged!");
                 enemy.Kill(damage);
+                if (EnemyList[0] == null)
+                {
+                    EnemyList.RemoveAt(0);
+                    Debug.Log("Remove Enemy");
+                }
                 particles.Play();
                 timer = 0f;
             }
         }
+
+        if (EnemyList.Count > 0)
+        {
+            target = EnemyList[0];
+            RotateTowerToEnemy();
+            Debug.Log("Do that plz");
+        }
+        
+
 
         // Update de startpositie van de lijn (bij de controller)
         lineRenderer.SetPosition(0, transform.position);
@@ -46,5 +71,38 @@ public class TowerShoot : MonoBehaviour
         lineRenderer.SetPosition(1, hit.point);
         // Geen hit? Trek lijn naar max afstand en verberg de laser dot
         lineRenderer.SetPosition(1, transform.position + transform.forward * maxDistance);
+
+    }
+
+    private void RotateTowerToEnemy()
+    {
+        // Bereken de rotatie die de Base nodig heeft om richting target te kijken
+        Quaternion targetRotation = Quaternion.LookRotation(target.transform.position - Base.transform.position);
+
+        // Lerp-factor geclampt tussen 0 en 1
+        float t = Mathf.Min(strength * Time.deltaTime, 1f);
+
+        // Pas de rotatie toe op de Base, niet op de root van de tower
+        Base.transform.rotation = Quaternion.Lerp(Base.transform.rotation, targetRotation, t);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            EnemyList.Add(other.gameObject);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            //get the name and then remove it
+            string EnemeyName = other.name;
+            //the word enemy is a placeholder variable representing each individual element in the EnemyList as the list is being searched.
+            GameObject EnemyOBJ = EnemyList.FirstOrDefault(enemy => enemy.name == EnemeyName);
+            EnemyList.Remove(EnemyOBJ);
+        }
+
     }
 }
