@@ -6,6 +6,7 @@ public class BuildManager : MonoBehaviour
     public GameObject FireTower;
     public GameObject AOEtower;
 
+    [SerializeField] MoneyManager moneyManager;
     public enum ToBuild
     {
         None,
@@ -16,6 +17,21 @@ public class BuildManager : MonoBehaviour
 
     public ToBuild TowerToBuild;
 
+    private void Update()
+    {
+        if(moneyManager.ThorTowers == 0 && TowerToBuild == ToBuild.ThorTower)
+        {
+            TowerToBuild = ToBuild.None;
+        }
+        if(moneyManager.FireTowers == 0 && TowerToBuild == ToBuild.FireTower)
+        {
+            TowerToBuild = ToBuild.None;
+        }
+        if(moneyManager.AOEtowers == 0 && TowerToBuild == ToBuild.AOEtower)
+        {
+            TowerToBuild= ToBuild.None;
+        }
+    }
     public GameObject objectToBuild()
     {
         switch (TowerToBuild)

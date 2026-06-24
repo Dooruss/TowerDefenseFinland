@@ -19,4 +19,18 @@ public class MoneyManager : MonoBehaviour
         FireTowerText.text = FireTowers.ToString();
         AOEtowText.text = AOEtowers.ToString();
     }
+
+    public void BuyThorTower()
+    {
+        ThorTowers++; 
+    }
+    public void BuyFireTower()
+    {
+        FireTowers++;
+    }
+
+    public void BuyAOEtow()
+    {
+        AOEtowers++;
+    }
 }

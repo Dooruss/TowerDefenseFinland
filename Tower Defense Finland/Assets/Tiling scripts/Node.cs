@@ -33,7 +33,11 @@ public class Node : MonoBehaviour
             return;
         }
         Debug.Log("Buildinggg");
-        Instantiate(buildManager.objectToBuild(), new Vector3(this.transform.position.x, 2f, this.transform.position.z), Quaternion.identity);
-        BuiltIn = true;
+        if (buildManager.objectToBuild() != null)
+        {
+            Instantiate(buildManager.objectToBuild(), new Vector3(this.transform.position.x, 2f, this.transform.position.z), Quaternion.identity);
+            BuiltIn = true;
+        }
+        
     }
 }

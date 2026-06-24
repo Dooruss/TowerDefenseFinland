@@ -883,10 +883,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 3
+      - m_Target: {fileID: 578261567}
+        m_TargetAssemblyTypeName: MoneyManager, Assembly-CSharp
+        m_MethodName: BuyFireTower
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12653,6 +12653,7 @@ MonoBehaviour:
   ThorTower: {fileID: 5892495129518311051, guid: b588ec6928acee0459258e23ac2d8a3d, type: 3}
   FireTower: {fileID: 2847265901302201101, guid: b1e6dfd0ff09fb24ea92a333aec7759e, type: 3}
   AOEtower: {fileID: 8251337238752929660, guid: 9b077a6f2728a164cb682c36cdeff676, type: 3}
+  moneyManager: {fileID: 578261567}
   TowerToBuild: 0
 --- !u!114 &578261567
 MonoBehaviour:
@@ -15195,10 +15196,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 3
+      - m_Target: {fileID: 578261567}
+        m_TargetAssemblyTypeName: MoneyManager, Assembly-CSharp
+        m_MethodName: BuyAOEtow
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -31582,10 +31583,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 3
+      - m_Target: {fileID: 578261567}
+        m_TargetAssemblyTypeName: MoneyManager, Assembly-CSharp
+        m_MethodName: BuyThorTower
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
