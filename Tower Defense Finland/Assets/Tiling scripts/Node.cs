@@ -3,7 +3,7 @@ using UnityEngine;
 public class Node : MonoBehaviour
 {
     [Header("Hover")]
-    private Color hoverColor = Color.yellowNice;
+    private Color hoverColor = Color.aliceBlue;
     private Renderer rend;
     private Color startColor;
 
@@ -33,7 +33,7 @@ public class Node : MonoBehaviour
             return;
         }
         Debug.Log("Buildinggg");
-        Instantiate(buildManager.objectToBuild(), this.transform.position, this.transform.rotation);
+        Instantiate(buildManager.objectToBuild(), new Vector3(this.transform.position.x, 2f, this.transform.position.z), Quaternion.identity);
         BuiltIn = true;
     }
 }

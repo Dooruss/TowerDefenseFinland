@@ -13,7 +13,7 @@ public class TowerShoot : MonoBehaviour
     public float timer = 0f;
     public float shootSpeed = 0.5f;
     public ParticleSystem particles;
-    public int damage = 50;
+    public int damage = 10;
 
     [Header("Rotation")]
     [SerializeField] GameObject Base;
@@ -41,12 +41,12 @@ public class TowerShoot : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance))
         {
             Debug.Log("Hit Something");
-            IEnemy enemy = hit.rigidbody.GetComponent<IEnemy>();
+            IEnemy enemy = hit.collider.GetComponent<IEnemy>();
             if (enemy != null && timer > shootSpeed)
             {
                 Debug.Log("Hit Something and damaged!");
                 enemy.Kill(damage);
-                if (EnemyList[0] == null)
+                if (EnemyList.Count > 0 && EnemyList[0] == null)
                 {
                     EnemyList.RemoveAt(0);
                     Debug.Log("Remove Enemy");
@@ -56,6 +56,7 @@ public class TowerShoot : MonoBehaviour
             }
         }
 
+        EnemyList.RemoveAll(e => e == null);
         if (EnemyList.Count > 0)
         {
             target = EnemyList[0];
@@ -76,6 +77,7 @@ public class TowerShoot : MonoBehaviour
 
     private void RotateTowerToEnemy()
     {
+        if (target == null || Base == null) return;
         // Bereken de rotatie die de Base nodig heeft om richting target te kijken
         Quaternion targetRotation = Quaternion.LookRotation(target.transform.position - Base.transform.position);
 
