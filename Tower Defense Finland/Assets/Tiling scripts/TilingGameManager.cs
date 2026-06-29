@@ -12,6 +12,7 @@ public class TilingGameManager : MonoBehaviour
         if(Health <= 0)
         {
             Debug.Log("Game Over");
+            Scene_Manager.LoadScene("You Died");
         }
     
      HealthBarFill.fillAmount = Health / 100f;
