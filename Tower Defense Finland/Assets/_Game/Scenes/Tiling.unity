@@ -245,6 +245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &9113462
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +390,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &25109353
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,6 +535,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &27141569
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,6 +663,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &29572700
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +808,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &33280063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,6 +1086,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &37454966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,6 +1214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &40261698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,6 +1359,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &48843222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,6 +1577,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &64106960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,6 +1705,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &76164733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,6 +1850,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &91067278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1973,6 +1995,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &91483635
 GameObject:
   m_ObjectHideFlags: 0
@@ -2116,6 +2140,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &98031873
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,6 +2268,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &102244481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2368,6 +2396,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &106045531
 GameObject:
   m_ObjectHideFlags: 0
@@ -2601,6 +2631,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &135111062
 GameObject:
   m_ObjectHideFlags: 0
@@ -2744,6 +2776,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &139499806
 GameObject:
   m_ObjectHideFlags: 0
@@ -2887,6 +2921,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &140686667
 GameObject:
   m_ObjectHideFlags: 0
@@ -3030,6 +3066,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &150973185
 GameObject:
   m_ObjectHideFlags: 0
@@ -3156,6 +3194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &152473622
 GameObject:
   m_ObjectHideFlags: 0
@@ -3372,6 +3412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &168521913
 GameObject:
   m_ObjectHideFlags: 0
@@ -3515,6 +3557,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &178716881
 GameObject:
   m_ObjectHideFlags: 0
@@ -3658,6 +3702,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &183088342
 GameObject:
   m_ObjectHideFlags: 0
@@ -3784,6 +3830,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &185514721
 GameObject:
   m_ObjectHideFlags: 0
@@ -3910,6 +3958,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &188951366
 GameObject:
   m_ObjectHideFlags: 0
@@ -4053,6 +4103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &189021693
 GameObject:
   m_ObjectHideFlags: 0
@@ -4179,6 +4231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &189867857
 GameObject:
   m_ObjectHideFlags: 0
@@ -4305,6 +4359,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &194947634
 GameObject:
   m_ObjectHideFlags: 0
@@ -4448,6 +4504,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &199245141
 GameObject:
   m_ObjectHideFlags: 0
@@ -4591,6 +4649,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &202638440
 GameObject:
   m_ObjectHideFlags: 0
@@ -4734,6 +4794,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &204608200
 GameObject:
   m_ObjectHideFlags: 0
@@ -4860,6 +4922,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &213650364
 GameObject:
   m_ObjectHideFlags: 0
@@ -4986,6 +5050,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &220892709
 GameObject:
   m_ObjectHideFlags: 0
@@ -5129,6 +5195,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &223192098
 GameObject:
   m_ObjectHideFlags: 0
@@ -5345,6 +5413,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &229862973
 GameObject:
   m_ObjectHideFlags: 0
@@ -5471,6 +5541,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &232522277
 GameObject:
   m_ObjectHideFlags: 0
@@ -5614,6 +5686,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &246183795
 GameObject:
   m_ObjectHideFlags: 0
@@ -5830,6 +5904,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &276523859
 GameObject:
   m_ObjectHideFlags: 0
@@ -5956,6 +6032,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &286045798
 GameObject:
   m_ObjectHideFlags: 0
@@ -6099,6 +6177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &289147936
 GameObject:
   m_ObjectHideFlags: 0
@@ -6225,6 +6305,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &296074944
 GameObject:
   m_ObjectHideFlags: 0
@@ -6368,6 +6450,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &301390216
 GameObject:
   m_ObjectHideFlags: 0
@@ -6601,6 +6685,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &303526047
 GameObject:
   m_ObjectHideFlags: 0
@@ -6727,6 +6813,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &307527418
 GameObject:
   m_ObjectHideFlags: 0
@@ -6870,6 +6958,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &309373808
 GameObject:
   m_ObjectHideFlags: 0
@@ -7133,6 +7223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &319352273
 GameObject:
   m_ObjectHideFlags: 0
@@ -7259,6 +7351,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &323095876
 GameObject:
   m_ObjectHideFlags: 0
@@ -7402,6 +7496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &329056923
 GameObject:
   m_ObjectHideFlags: 0
@@ -7528,6 +7624,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &330127832
 GameObject:
   m_ObjectHideFlags: 0
@@ -7671,6 +7769,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &331879518
 GameObject:
   m_ObjectHideFlags: 0
@@ -7814,6 +7914,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &336654031
 GameObject:
   m_ObjectHideFlags: 0
@@ -7957,6 +8059,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &340073722
 GameObject:
   m_ObjectHideFlags: 0
@@ -8083,6 +8187,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &343253874
 GameObject:
   m_ObjectHideFlags: 0
@@ -8226,6 +8332,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &344480009
 GameObject:
   m_ObjectHideFlags: 0
@@ -8369,6 +8477,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &362076135
 GameObject:
   m_ObjectHideFlags: 0
@@ -8585,6 +8695,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &374362033
 GameObject:
   m_ObjectHideFlags: 0
@@ -8728,6 +8840,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &377541635
 GameObject:
   m_ObjectHideFlags: 0
@@ -8871,6 +8985,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &388123161
 GameObject:
   m_ObjectHideFlags: 0
@@ -8997,6 +9113,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &397253875
 GameObject:
   m_ObjectHideFlags: 0
@@ -9123,6 +9241,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &397724980
 GameObject:
   m_ObjectHideFlags: 0
@@ -9249,6 +9369,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &401289663
 GameObject:
   m_ObjectHideFlags: 0
@@ -9392,6 +9514,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &401706116
 GameObject:
   m_ObjectHideFlags: 0
@@ -9518,6 +9642,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &403866461
 GameObject:
   m_ObjectHideFlags: 0
@@ -9751,6 +9877,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &422314899
 GameObject:
   m_ObjectHideFlags: 0
@@ -9967,6 +10095,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &429583579
 GameObject:
   m_ObjectHideFlags: 0
@@ -10110,6 +10240,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &430312123
 GameObject:
   m_ObjectHideFlags: 0
@@ -10236,6 +10368,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &436314787
 GameObject:
   m_ObjectHideFlags: 0
@@ -10379,6 +10513,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &439108086
 GameObject:
   m_ObjectHideFlags: 0
@@ -10522,6 +10658,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &454918913
 GameObject:
   m_ObjectHideFlags: 0
@@ -10665,6 +10803,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &468661158
 GameObject:
   m_ObjectHideFlags: 0
@@ -10808,6 +10948,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &472105326
 GameObject:
   m_ObjectHideFlags: 0
@@ -10934,6 +11076,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &486419342
 GameObject:
   m_ObjectHideFlags: 0
@@ -11077,6 +11221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &500767854
 GameObject:
   m_ObjectHideFlags: 0
@@ -11220,6 +11366,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &515158837
 GameObject:
   m_ObjectHideFlags: 0
@@ -11363,6 +11511,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &517088697
 GameObject:
   m_ObjectHideFlags: 0
@@ -11506,6 +11656,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &520742884
 GameObject:
   m_ObjectHideFlags: 0
@@ -11632,6 +11784,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &526830032
 GameObject:
   m_ObjectHideFlags: 0
@@ -11775,6 +11929,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &542174876
 GameObject:
   m_ObjectHideFlags: 0
@@ -11901,6 +12057,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &544251833
 GameObject:
   m_ObjectHideFlags: 0
@@ -12027,6 +12185,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &546366306
 GameObject:
   m_ObjectHideFlags: 0
@@ -12260,6 +12420,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &555545230
 GameObject:
   m_ObjectHideFlags: 0
@@ -12386,6 +12548,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &558327408
 GameObject:
   m_ObjectHideFlags: 0
@@ -12512,6 +12676,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &561559803
 GameObject:
   m_ObjectHideFlags: 0
@@ -12675,6 +12841,9 @@ MonoBehaviour:
   FireTowerText: {fileID: 1576279805}
   AOEtowText: {fileID: 309373810}
   moneyText: {fileID: 1176570384}
+  ThorTowerLiftetime: 10
+  FireTowerLifeTime: 5
+  AOETowerLifeTime: 7
 --- !u!1 &586703960
 GameObject:
   m_ObjectHideFlags: 0
@@ -12891,6 +13060,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &591465234
 GameObject:
   m_ObjectHideFlags: 0
@@ -13034,6 +13205,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &593100701
 GameObject:
   m_ObjectHideFlags: 0
@@ -13267,6 +13440,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &602703864
 GameObject:
   m_ObjectHideFlags: 0
@@ -13393,6 +13568,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &610759402
 GameObject:
   m_ObjectHideFlags: 0
@@ -13536,6 +13713,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &615453106
 GameObject:
   m_ObjectHideFlags: 0
@@ -13679,6 +13858,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &628000391
 GameObject:
   m_ObjectHideFlags: 0
@@ -13912,6 +14093,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &628262277
 GameObject:
   m_ObjectHideFlags: 0
@@ -14055,6 +14238,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &637629549
 GameObject:
   m_ObjectHideFlags: 0
@@ -14198,6 +14383,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &639729170
 GameObject:
   m_ObjectHideFlags: 0
@@ -14341,6 +14528,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &642315741
 GameObject:
   m_ObjectHideFlags: 0
@@ -14467,6 +14656,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &657146077
 GameObject:
   m_ObjectHideFlags: 0
@@ -14610,6 +14801,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &657300886
 GameObject:
   m_ObjectHideFlags: 0
@@ -14736,6 +14929,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &683821789
 GameObject:
   m_ObjectHideFlags: 0
@@ -14862,6 +15057,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &684922581
 GameObject:
   m_ObjectHideFlags: 0
@@ -14988,6 +15185,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &687834208
 GameObject:
   m_ObjectHideFlags: 0
@@ -15114,6 +15313,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &712435429
 GameObject:
   m_ObjectHideFlags: 0
@@ -15373,6 +15574,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &746967794
 GameObject:
   m_ObjectHideFlags: 0
@@ -15516,6 +15719,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &748553058
 GameObject:
   m_ObjectHideFlags: 0
@@ -15642,6 +15847,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &749780646
 GameObject:
   m_ObjectHideFlags: 0
@@ -15785,6 +15992,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &763516215
 GameObject:
   m_ObjectHideFlags: 0
@@ -15928,6 +16137,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &763894455
 GameObject:
   m_ObjectHideFlags: 0
@@ -16071,6 +16282,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &765657926
 GameObject:
   m_ObjectHideFlags: 0
@@ -16351,6 +16564,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &787442468
 GameObject:
   m_ObjectHideFlags: 0
@@ -16477,6 +16692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &814729632
 GameObject:
   m_ObjectHideFlags: 0
@@ -16620,6 +16837,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &817402617
 GameObject:
   m_ObjectHideFlags: 0
@@ -16878,6 +17097,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &822448557
 GameObject:
   m_ObjectHideFlags: 0
@@ -17004,6 +17225,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &822978132
 GameObject:
   m_ObjectHideFlags: 0
@@ -17237,6 +17460,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &825011930
 GameObject:
   m_ObjectHideFlags: 0
@@ -17380,6 +17605,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &830682169
 GameObject:
   m_ObjectHideFlags: 0
@@ -17582,6 +17809,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &839877229
 GameObject:
   m_ObjectHideFlags: 0
@@ -17725,6 +17954,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &850404612
 GameObject:
   m_ObjectHideFlags: 0
@@ -17868,6 +18099,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &858357319
 GameObject:
   m_ObjectHideFlags: 0
@@ -17994,6 +18227,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &871957801
 GameObject:
   m_ObjectHideFlags: 0
@@ -18137,6 +18372,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &887432238
 GameObject:
   m_ObjectHideFlags: 0
@@ -18353,6 +18590,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &913138364
 GameObject:
   m_ObjectHideFlags: 0
@@ -18496,6 +18735,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &915663604
 GameObject:
   m_ObjectHideFlags: 0
@@ -18639,6 +18880,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &923041119
 GameObject:
   m_ObjectHideFlags: 0
@@ -18765,6 +19008,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &924390017
 GameObject:
   m_ObjectHideFlags: 0
@@ -18908,6 +19153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &928572116
 GameObject:
   m_ObjectHideFlags: 0
@@ -19051,6 +19298,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &930811820
 GameObject:
   m_ObjectHideFlags: 0
@@ -19194,6 +19443,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &932565296
 GameObject:
   m_ObjectHideFlags: 0
@@ -19337,6 +19588,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &940310973
 GameObject:
   m_ObjectHideFlags: 0
@@ -19480,6 +19733,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &947065547
 GameObject:
   m_ObjectHideFlags: 0
@@ -19623,6 +19878,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &953122224
 GameObject:
   m_ObjectHideFlags: 0
@@ -19766,6 +20023,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &953251457
 GameObject:
   m_ObjectHideFlags: 0
@@ -19909,6 +20168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &959451891
 GameObject:
   m_ObjectHideFlags: 0
@@ -20052,6 +20313,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &969610227
 GameObject:
   m_ObjectHideFlags: 0
@@ -20195,6 +20458,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &974772007
 GameObject:
   m_ObjectHideFlags: 0
@@ -20321,6 +20586,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &976493433
 GameObject:
   m_ObjectHideFlags: 0
@@ -20464,6 +20731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &997132476
 GameObject:
   m_ObjectHideFlags: 0
@@ -20607,6 +20876,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1001724659
 GameObject:
   m_ObjectHideFlags: 0
@@ -20733,6 +21004,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1009219923
 GameObject:
   m_ObjectHideFlags: 0
@@ -20859,6 +21132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1022756155
 GameObject:
   m_ObjectHideFlags: 0
@@ -21002,6 +21277,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1029362056
 GameObject:
   m_ObjectHideFlags: 0
@@ -21145,6 +21422,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1030916406
 GameObject:
   m_ObjectHideFlags: 0
@@ -21288,6 +21567,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1034900478
 GameObject:
   m_ObjectHideFlags: 0
@@ -21431,6 +21712,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1035092111
 GameObject:
   m_ObjectHideFlags: 0
@@ -21574,6 +21857,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1040214055
 GameObject:
   m_ObjectHideFlags: 0
@@ -21790,6 +22075,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1044573600
 GameObject:
   m_ObjectHideFlags: 0
@@ -21933,6 +22220,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1050740885
 GameObject:
   m_ObjectHideFlags: 0
@@ -22076,6 +22365,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1050939350
 GameObject:
   m_ObjectHideFlags: 0
@@ -22202,6 +22493,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1051797601
 GameObject:
   m_ObjectHideFlags: 0
@@ -22345,6 +22638,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1062020420
 GameObject:
   m_ObjectHideFlags: 0
@@ -22471,6 +22766,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1068770319
 GameObject:
   m_ObjectHideFlags: 0
@@ -22597,6 +22894,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1078249118
 GameObject:
   m_ObjectHideFlags: 0
@@ -22723,6 +23022,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1080603784
 GameObject:
   m_ObjectHideFlags: 0
@@ -22849,6 +23150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1085742698
 GameObject:
   m_ObjectHideFlags: 0
@@ -22992,6 +23295,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1094794193
 GameObject:
   m_ObjectHideFlags: 0
@@ -23225,6 +23530,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1109504386
 GameObject:
   m_ObjectHideFlags: 0
@@ -23351,6 +23658,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1115104551
 GameObject:
   m_ObjectHideFlags: 0
@@ -23494,6 +23803,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1117342242
 GameObject:
   m_ObjectHideFlags: 0
@@ -23637,6 +23948,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1121469100
 GameObject:
   m_ObjectHideFlags: 0
@@ -23780,6 +24093,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1124619059
 GameObject:
   m_ObjectHideFlags: 0
@@ -23906,6 +24221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1130896693
 GameObject:
   m_ObjectHideFlags: 0
@@ -24122,6 +24439,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1141705073
 GameObject:
   m_ObjectHideFlags: 0
@@ -24248,6 +24567,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1145812644
 GameObject:
   m_ObjectHideFlags: 0
@@ -24374,6 +24695,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1153912339
 GameObject:
   m_ObjectHideFlags: 0
@@ -24517,6 +24840,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1167367135
 GameObject:
   m_ObjectHideFlags: 0
@@ -24660,6 +24985,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1176570382
 GameObject:
   m_ObjectHideFlags: 0
@@ -24940,6 +25267,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1180083904
 GameObject:
   m_ObjectHideFlags: 0
@@ -25066,6 +25395,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1190876110
 GameObject:
   m_ObjectHideFlags: 0
@@ -25419,6 +25750,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1220073154
 GameObject:
   m_ObjectHideFlags: 0
@@ -25593,6 +25926,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1267571651
 GameObject:
   m_ObjectHideFlags: 0
@@ -25719,6 +26054,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1272132165
 GameObject:
   m_ObjectHideFlags: 0
@@ -25845,6 +26182,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1277390045
 GameObject:
   m_ObjectHideFlags: 0
@@ -25988,6 +26327,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1277403555
 GameObject:
   m_ObjectHideFlags: 0
@@ -26131,6 +26472,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1295312004
 GameObject:
   m_ObjectHideFlags: 0
@@ -26257,6 +26600,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1316390802
 GameObject:
   m_ObjectHideFlags: 0
@@ -26400,6 +26745,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1332949486
 GameObject:
   m_ObjectHideFlags: 0
@@ -26543,6 +26890,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1336218801
 GameObject:
   m_ObjectHideFlags: 0
@@ -26686,6 +27035,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1340674614
 GameObject:
   m_ObjectHideFlags: 0
@@ -26996,6 +27347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1376439682
 GameObject:
   m_ObjectHideFlags: 0
@@ -27139,6 +27492,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1398300004
 GameObject:
   m_ObjectHideFlags: 0
@@ -27282,6 +27637,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1401049906
 GameObject:
   m_ObjectHideFlags: 0
@@ -27408,6 +27765,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1408743065
 GameObject:
   m_ObjectHideFlags: 0
@@ -27551,6 +27910,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1422026889
 GameObject:
   m_ObjectHideFlags: 0
@@ -27694,6 +28055,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1428639355
 GameObject:
   m_ObjectHideFlags: 0
@@ -27820,6 +28183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1435097578
 GameObject:
   m_ObjectHideFlags: 0
@@ -27946,6 +28311,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1436772227
 GameObject:
   m_ObjectHideFlags: 0
@@ -28089,6 +28456,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1455035883
 GameObject:
   m_ObjectHideFlags: 0
@@ -28415,6 +28784,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1485904666
 GameObject:
   m_ObjectHideFlags: 0
@@ -28558,6 +28929,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1488100260
 GameObject:
   m_ObjectHideFlags: 0
@@ -28701,6 +29074,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1493971119
 GameObject:
   m_ObjectHideFlags: 0
@@ -28827,6 +29202,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1537238128
 GameObject:
   m_ObjectHideFlags: 0
@@ -28970,6 +29347,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1546526622
 GameObject:
   m_ObjectHideFlags: 0
@@ -29096,6 +29475,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1548642435
 GameObject:
   m_ObjectHideFlags: 0
@@ -29222,6 +29603,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1554458139
 GameObject:
   m_ObjectHideFlags: 0
@@ -29455,6 +29838,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1568375399
 GameObject:
   m_ObjectHideFlags: 0
@@ -29957,6 +30342,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1586062739
 GameObject:
   m_ObjectHideFlags: 0
@@ -30100,6 +30487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1589076786
 GameObject:
   m_ObjectHideFlags: 0
@@ -30243,6 +30632,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1590597247
 GameObject:
   m_ObjectHideFlags: 0
@@ -30369,6 +30760,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1596089059
 GameObject:
   m_ObjectHideFlags: 0
@@ -30495,6 +30888,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1596644594
 GameObject:
   m_ObjectHideFlags: 0
@@ -30638,6 +31033,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1608955506
 GameObject:
   m_ObjectHideFlags: 0
@@ -30781,6 +31178,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1620526218
 GameObject:
   m_ObjectHideFlags: 0
@@ -30924,6 +31323,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1621779180
 GameObject:
   m_ObjectHideFlags: 0
@@ -31140,6 +31541,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1628381154
 GameObject:
   m_ObjectHideFlags: 0
@@ -31283,6 +31686,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1634359305
 GameObject:
   m_ObjectHideFlags: 0
@@ -31409,6 +31814,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1636318002
 GameObject:
   m_ObjectHideFlags: 0
@@ -31535,6 +31942,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1637879141
 GameObject:
   m_ObjectHideFlags: 0
@@ -31678,6 +32087,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1640405621
 GameObject:
   m_ObjectHideFlags: 0
@@ -31804,6 +32215,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1641568556
 GameObject:
   m_ObjectHideFlags: 0
@@ -32080,6 +32493,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1653035256
 GameObject:
   m_ObjectHideFlags: 0
@@ -32223,6 +32638,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1658715956
 GameObject:
   m_ObjectHideFlags: 0
@@ -32349,6 +32766,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1659747399
 GameObject:
   m_ObjectHideFlags: 0
@@ -32475,6 +32894,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1663965611
 GameObject:
   m_ObjectHideFlags: 0
@@ -32708,6 +33129,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1676634219
 GameObject:
   m_ObjectHideFlags: 0
@@ -32834,6 +33257,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1697084919
 GameObject:
   m_ObjectHideFlags: 0
@@ -32977,6 +33402,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1700069588
 GameObject:
   m_ObjectHideFlags: 0
@@ -33120,6 +33547,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1704266182
 GameObject:
   m_ObjectHideFlags: 0
@@ -33263,6 +33692,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1712090170
 GameObject:
   m_ObjectHideFlags: 0
@@ -33389,6 +33820,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1721956549
 GameObject:
   m_ObjectHideFlags: 0
@@ -33515,6 +33948,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1723711296
 GameObject:
   m_ObjectHideFlags: 0
@@ -33641,6 +34076,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1739877766
 GameObject:
   m_ObjectHideFlags: 0
@@ -33784,6 +34221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1741364657
 GameObject:
   m_ObjectHideFlags: 0
@@ -34065,6 +34504,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1744257021
 GameObject:
   m_ObjectHideFlags: 0
@@ -34208,6 +34649,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1749338117
 GameObject:
   m_ObjectHideFlags: 0
@@ -34351,6 +34794,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1753677734
 GameObject:
   m_ObjectHideFlags: 0
@@ -34477,6 +34922,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1760741664
 GameObject:
   m_ObjectHideFlags: 0
@@ -34603,6 +35050,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1773771092
 GameObject:
   m_ObjectHideFlags: 0
@@ -34729,6 +35178,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1787642096
 GameObject:
   m_ObjectHideFlags: 0
@@ -34872,6 +35323,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1788142016
 GameObject:
   m_ObjectHideFlags: 0
@@ -35015,6 +35468,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1788941477
 GameObject:
   m_ObjectHideFlags: 0
@@ -35141,6 +35596,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1807765522
 GameObject:
   m_ObjectHideFlags: 0
@@ -35267,6 +35724,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1816298844
 GameObject:
   m_ObjectHideFlags: 0
@@ -35410,6 +35869,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1827040674
 GameObject:
   m_ObjectHideFlags: 0
@@ -35553,6 +36014,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1833131761
 GameObject:
   m_ObjectHideFlags: 0
@@ -35679,6 +36142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1843765419
 GameObject:
   m_ObjectHideFlags: 0
@@ -35822,6 +36287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1860172814
 GameObject:
   m_ObjectHideFlags: 0
@@ -35965,6 +36432,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1867540839
 GameObject:
   m_ObjectHideFlags: 0
@@ -36108,6 +36577,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1868591995
 GameObject:
   m_ObjectHideFlags: 0
@@ -36383,6 +36854,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1876772306
 GameObject:
   m_ObjectHideFlags: 0
@@ -36526,6 +36999,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1877938894
 GameObject:
   m_ObjectHideFlags: 0
@@ -36652,6 +37127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1880973662
 GameObject:
   m_ObjectHideFlags: 0
@@ -36921,6 +37398,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1895090551
 GameObject:
   m_ObjectHideFlags: 0
@@ -37064,6 +37543,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1898023287
 GameObject:
   m_ObjectHideFlags: 0
@@ -37190,6 +37671,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1905502982
 GameObject:
   m_ObjectHideFlags: 0
@@ -37333,6 +37816,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1906839896
 GameObject:
   m_ObjectHideFlags: 0
@@ -37459,6 +37944,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1916884973
 GameObject:
   m_ObjectHideFlags: 0
@@ -37712,6 +38199,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1938680159
 GameObject:
   m_ObjectHideFlags: 0
@@ -37838,6 +38327,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1943547012
 GameObject:
   m_ObjectHideFlags: 0
@@ -37964,6 +38455,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1950497304
 GameObject:
   m_ObjectHideFlags: 0
@@ -38107,6 +38600,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1953891337
 GameObject:
   m_ObjectHideFlags: 0
@@ -38339,6 +38834,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1977925021
 GameObject:
   m_ObjectHideFlags: 0
@@ -38482,6 +38979,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1979726770
 GameObject:
   m_ObjectHideFlags: 0
@@ -38608,6 +39107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &1981254563
 GameObject:
   m_ObjectHideFlags: 0
@@ -38751,6 +39252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2014310481
 GameObject:
   m_ObjectHideFlags: 0
@@ -38894,6 +39397,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2016936800
 GameObject:
   m_ObjectHideFlags: 0
@@ -39127,6 +39632,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2029705317
 GameObject:
   m_ObjectHideFlags: 0
@@ -39253,6 +39760,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2031093296
 GameObject:
   m_ObjectHideFlags: 0
@@ -39396,6 +39905,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2032190497
 GameObject:
   m_ObjectHideFlags: 0
@@ -39629,6 +40140,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2041534435
 GameObject:
   m_ObjectHideFlags: 0
@@ -39772,6 +40285,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2046764096
 GameObject:
   m_ObjectHideFlags: 0
@@ -39915,6 +40430,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2048364131
 GameObject:
   m_ObjectHideFlags: 0
@@ -40077,6 +40594,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2080854523
 GameObject:
   m_ObjectHideFlags: 0
@@ -40220,6 +40739,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2084956193
 GameObject:
   m_ObjectHideFlags: 0
@@ -40436,6 +40957,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2094266137
 GameObject:
   m_ObjectHideFlags: 0
@@ -40562,6 +41085,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2098160996
 GameObject:
   m_ObjectHideFlags: 0
@@ -40705,6 +41230,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2111234115
 GameObject:
   m_ObjectHideFlags: 0
@@ -40831,6 +41358,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2115717461
 GameObject:
   m_ObjectHideFlags: 0
@@ -41064,6 +41593,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2122104988
 GameObject:
   m_ObjectHideFlags: 0
@@ -41280,6 +41811,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2139290769
 GameObject:
   m_ObjectHideFlags: 0
@@ -41406,6 +41939,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1 &2147421205
 GameObject:
   m_ObjectHideFlags: 0
@@ -41549,6 +42084,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   BuiltIn: 0
+  TowerLifeTime: 0
+  builtTower: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

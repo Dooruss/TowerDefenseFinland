@@ -11,6 +11,8 @@ public class Node : MonoBehaviour
     [Header("Building")]
     [SerializeField] private bool BuiltIn = false;
     private BuildManager buildManager;
+    [SerializeField]  float TowerLifeTime = 0f;
+    [SerializeField] GameObject builtTower;
 
     [Header("Money")]
     MoneyManager moneyManager;
@@ -20,6 +22,23 @@ public class Node : MonoBehaviour
         startColor = rend.material.color;
         buildManager = GameObject.Find("GameManager").GetComponent<BuildManager>();
         moneyManager = GameObject.Find("GameManager").GetComponent<MoneyManager>();
+
+    }
+    private void Update()
+    {
+
+        if (TowerLifeTime > 0f)
+        {
+            Debug.Log(TowerLifeTime);
+            TowerLifeTime -= Time.deltaTime;
+        }
+
+        if (TowerLifeTime < 0f && builtTower != null)
+        {
+            Debug.Log("Delete plz");
+            Destroy(builtTower);
+            BuiltIn = false;
+        }
 
     }
     private void OnMouseEnter()
@@ -41,18 +60,21 @@ public class Node : MonoBehaviour
         Debug.Log("Buildinggg");
         if (buildManager.objectToBuild() != null)
         {
-            Instantiate(buildManager.objectToBuild(), new Vector3(this.transform.position.x, 2f, this.transform.position.z), Quaternion.identity);
+            builtTower = Instantiate(buildManager.objectToBuild(), new Vector3(this.transform.position.x, 2f, this.transform.position.z), Quaternion.identity);
            
                 switch (buildManager.TowerToBuild)
                 {
                     case ToBuild.ThorTower:
                     moneyManager.ThorTowers--;
+                    TowerLifeTime = moneyManager.ThorTowerLiftetime;
                         break;
                     case ToBuild.FireTower:
                     moneyManager.FireTowers--;
+                    TowerLifeTime = moneyManager.FireTowerLifeTime;
                         break;
                     case ToBuild.AOEtower:
                     moneyManager.AOEtowers--;
+                    TowerLifeTime = moneyManager.AOETowerLifeTime;
                     break;
                 }
             BuiltIn = true;
