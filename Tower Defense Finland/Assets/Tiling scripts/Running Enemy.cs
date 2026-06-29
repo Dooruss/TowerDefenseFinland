@@ -10,6 +10,7 @@ public class RunningEnemy : MonoBehaviour, IEnemy
     [SerializeField] float currentHealth;
     [SerializeField] float maxHealth = 100f;
     [SerializeField] Image HealthBarFill;
+    private int MoneyAfterDeath = 50;
 
     private void Start()
     {
@@ -21,6 +22,8 @@ public class RunningEnemy : MonoBehaviour, IEnemy
         agent.SetDestination(End.position);
         if(currentHealth <= 0)
         {
+            MoneyManager moneyManager = GameObject.Find("GameManager").GetComponent<MoneyManager>();
+            moneyManager.Money += MoneyAfterDeath;
             Destroy(this.gameObject);
         }
     }
