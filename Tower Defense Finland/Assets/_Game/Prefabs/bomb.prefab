@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6d84e786a33b8c4ebf9c4140fbdf2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireBall
-  boxSize: {x: 10, y: 100, z: 10}
+  boxSize: {x: 20, y: 100, z: 20}
   explode: 0
   exploded: 0
   timer: 0

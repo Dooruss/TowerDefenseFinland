@@ -54,6 +54,12 @@ public class FireBall : MonoBehaviour
         foreach (var hit in hits)
         {
             //here you check for the enemy script
+            RunningEnemy tillingEnemy = hit.GetComponent<RunningEnemy>();
+            if (tillingEnemy != null)
+            {
+                tillingEnemy.currentHealth -= BombDamage;
+                tillingEnemy.UpdateHealthBar();
+            }
             Enemy_1 enemyScipt = hit.GetComponent<Enemy_1>();
             if (enemyScipt != null)
             {

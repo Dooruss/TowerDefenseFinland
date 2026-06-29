@@ -7,7 +7,7 @@ public class RunningEnemy : MonoBehaviour, IEnemy
 {
     [SerializeField] NavMeshAgent agent;
     private Transform End;
-    [SerializeField] float currentHealth;
+    public float currentHealth;
     [SerializeField] float maxHealth = 100f;
     [SerializeField] Image HealthBarFill;
     private int MoneyAfterDeath = 40;
