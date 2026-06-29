@@ -20,8 +20,8 @@ public class MoneyManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI moneyText;
 
     public float ThorTowerLiftetime = 10f;
-    public float FireTowerLifeTime = 5f;
-    public float AOETowerLifeTime = 7f;
+    public float FireTowerLifeTime = 10f;
+    public float AOETowerLifeTime = 10f;
 
    
     private void Update()

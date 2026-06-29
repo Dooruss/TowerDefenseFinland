@@ -54,4 +54,9 @@ public class BuildManager : MonoBehaviour
         TowerToBuild = (ToBuild)tower;
         
     }
+
+    public void SetTowerToNone()
+    {
+        TowerToBuild = ToBuild.None;
+    }
 }

@@ -10,7 +10,7 @@ public class RunningEnemy : MonoBehaviour, IEnemy
     [SerializeField] float currentHealth;
     [SerializeField] float maxHealth = 100f;
     [SerializeField] Image HealthBarFill;
-    private int MoneyAfterDeath = 20;
+    private int MoneyAfterDeath = 40;
 
     private void Start()
     {

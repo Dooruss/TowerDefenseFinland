@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TilingGameManager : MonoBehaviour
 {
     public float Health = 100f;
+    [SerializeField] Image HealthBarFill;
    
 
     void Update()
@@ -11,5 +13,8 @@ public class TilingGameManager : MonoBehaviour
         {
             Debug.Log("Game Over");
         }
+    
+     HealthBarFill.fillAmount = Health / 100f;
+    
     }
 }
