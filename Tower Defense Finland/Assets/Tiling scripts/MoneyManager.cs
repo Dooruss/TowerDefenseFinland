@@ -3,34 +3,54 @@ using UnityEngine;
 
 public class MoneyManager : MonoBehaviour
 {
-    public int Money;
+    public int Money = 300;
 
     public int ThorTowers = 0;
     public int FireTowers = 0;
     public int AOEtowers = 0;
 
+    private int ThorTowerPrice = 100;
+    private int FireTowerPrice = 100;
+    private int AOEtowerPrice = 100;
+
     [SerializeField] TextMeshProUGUI ThorTowerText;
     [SerializeField] TextMeshProUGUI FireTowerText;
     [SerializeField] TextMeshProUGUI AOEtowText;
 
+    [SerializeField] TextMeshProUGUI moneyText;
+
+   
     private void Update()
     {
         ThorTowerText.text = ThorTowers.ToString();
         FireTowerText.text = FireTowers.ToString();
         AOEtowText.text = AOEtowers.ToString();
+        moneyText.text = Money.ToString();
     }
 
     public void BuyThorTower()
     {
-        ThorTowers++; 
+        if (Money >= ThorTowerPrice)
+        {
+            ThorTowers++;
+            Money -= ThorTowerPrice;
+        }
     }
     public void BuyFireTower()
     {
-        FireTowers++;
+        if (Money >= FireTowerPrice)
+        {
+            FireTowers++;
+            Money -= FireTowerPrice;
+        }
     }
 
     public void BuyAOEtow()
     {
-        AOEtowers++;
+        if (Money >= AOEtowerPrice)
+        {
+            AOEtowers++;
+            Money -= AOEtowerPrice;
+        }
     }
 }
