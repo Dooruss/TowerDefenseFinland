@@ -10,10 +10,11 @@ public class TowerShootAura : MonoBehaviour
     public int damage = 50;
     public List<GameObject> EnemyList;
     public GameObject speer;
+    [SerializeField] private AudioClip shootSound;
     public void Update()
     {
         timer += Time.deltaTime;
-        if(timer > shootSpeed)
+        if (timer > shootSpeed)
         {
             if (EnemyList.Count != 0)
             {
@@ -28,6 +29,7 @@ public class TowerShootAura : MonoBehaviour
                         IEnemy enemyInterface = enemy.GetComponent<IEnemy>();
                         enemyInterface.Kill(damage);
                         Debug.Log("Damaged" + enemy.name);
+                        AudioSource.PlayClipAtPoint(shootSound, new Vector3(-31, 72, 39), 0.25f);
                         GameObject SpawnedSpeer = Instantiate(speer, this.gameObject.transform);
                         ShootSpeer script = SpawnedSpeer.GetComponent<ShootSpeer>();
                         SpawnedSpeer.transform.localScale = new Vector3(0.03333334f, 0.006666666f, 0.006666666f);
@@ -51,7 +53,7 @@ public class TowerShootAura : MonoBehaviour
         //get the name and then remove it
         string EnemeyName = other.name;
         //the word enemy is a placeholder variable representing each individual element in the EnemyList as the list is being searched.
-        GameObject EnemyOBJ =  EnemyList.FirstOrDefault(enemy => enemy.name == EnemeyName);
+        GameObject EnemyOBJ = EnemyList.FirstOrDefault(enemy => enemy.name == EnemeyName);
         EnemyList.Remove(EnemyOBJ);
 
     }

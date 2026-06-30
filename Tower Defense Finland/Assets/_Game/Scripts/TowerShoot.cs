@@ -14,6 +14,7 @@ public class TowerShoot : MonoBehaviour
     public float shootSpeed = 0.5f;
     public ParticleSystem particles;
     public int damage = 10;
+    [SerializeField] private AudioClip shootSound;
 
     [Header("Rotation")]
     [SerializeField] GameObject Base;
@@ -45,6 +46,7 @@ public class TowerShoot : MonoBehaviour
             if (enemy != null && timer > shootSpeed)
             {
                 Debug.Log("Hit Something and damaged!");
+                AudioSource.PlayClipAtPoint(shootSound, new Vector3(-31, 72, 39), 0.7f);
                 enemy.Kill(damage);
                 if (EnemyList.Count > 0 && EnemyList[0] == null)
                 {

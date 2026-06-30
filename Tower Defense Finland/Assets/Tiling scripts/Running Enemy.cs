@@ -11,6 +11,7 @@ public class RunningEnemy : MonoBehaviour, IEnemy
     [SerializeField] float maxHealth = 100f;
     [SerializeField] Image HealthBarFill;
     private int MoneyAfterDeath = 40;
+    [SerializeField] AudioClip Death_Sound;
 
     private void Start()
     {
@@ -22,6 +23,7 @@ public class RunningEnemy : MonoBehaviour, IEnemy
         agent.SetDestination(End.position);
         if(currentHealth <= 0)
         {
+            AudioSource.PlayClipAtPoint(Death_Sound, new Vector3(-31 , 72 , 39) , 0.5f);
             MoneyManager moneyManager = GameObject.Find("GameManager").GetComponent<MoneyManager>();
             moneyManager.Money += MoneyAfterDeath;
             Destroy(this.gameObject);
