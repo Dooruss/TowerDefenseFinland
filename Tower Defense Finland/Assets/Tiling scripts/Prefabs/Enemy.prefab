@@ -406,7 +406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RunningEnemy
   agent: {fileID: 1280455937582328654}
   currentHealth: 0
-  maxHealth: 100
+  maxHealth: 75
   HealthBarFill: {fileID: 8373658368987412324}
 --- !u!54 &8279867139327519025
 Rigidbody:
