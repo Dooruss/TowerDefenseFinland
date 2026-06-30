@@ -17,9 +17,15 @@ public class RunningEnemy : MonoBehaviour, IEnemy
     {
         End = GameObject.Find("END").GetComponent<Transform>();
         currentHealth = maxHealth;
+        
     }
     void Update()
     {
+        this.gameObject.transform.eulerAngles = new Vector3(
+                                                this.gameObject.transform.eulerAngles.x - 90f,
+                                                this.gameObject.transform.eulerAngles.y,
+                                                this.gameObject.transform.eulerAngles.z
+                                            );
         agent.SetDestination(End.position);
         if(currentHealth <= 0)
         {

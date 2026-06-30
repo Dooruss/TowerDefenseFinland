@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class ThorUpgrade : MonoBehaviour
@@ -6,9 +7,11 @@ public class ThorUpgrade : MonoBehaviour
     int UpgradePrice = 300;
     [SerializeField] GameObject UpgradeShit;
     [SerializeField] int Level = 0;
+    [SerializeField] TextMeshProUGUI LvlText;
     void Start()
     {
         moneyManager = GameObject.Find("GameManager").GetComponent<MoneyManager>();
+        LvlText.text = ("Lvl " + Level.ToString());
     }
 
     void Update()
@@ -27,23 +30,24 @@ public class ThorUpgrade : MonoBehaviour
     {
         moneyManager.Money -= UpgradePrice;
         moneyManager.ThorTowerLiftetime += 5f;
-        Debug.Log("Thor tower lifetime is now" + moneyManager.ThorTowerLiftetime);
         Level++;
+        LvlText.text = ("Lvl " + Level.ToString());
+
     }
 
     public void UpgradeFire()
     {
         moneyManager.Money -= UpgradePrice;
         moneyManager.FireTowerLifeTime += 5;
-        Debug.Log("Fire tower lifetime is now" + moneyManager.FireTowerLifeTime);
         Level++;
+        LvlText.text = ("Lvl " + Level.ToString());
     }
 
     public void UpgradeAOE()
     {
         moneyManager.Money -= UpgradePrice;
         moneyManager.AOETowerLifeTime += 5;
-        Debug.Log("AEO tower lifetime is now " + moneyManager.AOETowerLifeTime);
         Level++;
+        LvlText.text = ("Lvl " + Level.ToString());
     }
 }

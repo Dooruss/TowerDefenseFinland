@@ -34,7 +34,7 @@ public class FireTower : MonoBehaviour
                         AudioSource.PlayClipAtPoint(shootSound, new Vector3(-31, 72, 39), 0.7f);
                         //make fire area
                         IEnemy enemyInterface = enemy.GetComponent<IEnemy>();
-                        Instantiate(fireArea, enemy.transform.position, enemy.transform.rotation);
+                        Instantiate(fireArea, enemy.transform.position, this.transform.rotation);
 
                         ////throw fireball towards the fire area
                         //GameObject SpawnedFIREBALL = Instantiate(fireball, this.gameObject.transform);
