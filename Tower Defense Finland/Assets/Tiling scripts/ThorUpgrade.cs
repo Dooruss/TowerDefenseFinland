@@ -42,7 +42,7 @@ public class ThorUpgrade : MonoBehaviour
     public void UpgradeAOE()
     {
         moneyManager.Money -= UpgradePrice;
-        moneyManager.FireTowerLifeTime += 5;
+        moneyManager.AOETowerLifeTime += 5;
         Debug.Log("AEO tower lifetime is now " + moneyManager.AOETowerLifeTime);
         Level++;
     }
