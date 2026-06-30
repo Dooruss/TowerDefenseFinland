@@ -4977,6 +4977,7 @@ MonoBehaviour:
   EnemyList: []
   fireball: {fileID: 0}
   fireArea: {fileID: 737485745487407726, guid: 5f5b628eb36409d4184c5a6ebd64376c, type: 3}
+  shootSound: {fileID: 8300000, guid: ee5a2cecfe2aa5e4a8623c41051c9833, type: 3}
 --- !u!1001 &3117314002028201564
 PrefabInstance:
   m_ObjectHideFlags: 0

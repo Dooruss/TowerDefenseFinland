@@ -9,6 +9,7 @@ public class FireBall : MonoBehaviour
     public float timer;
     public int BombDamage = 10;
     [SerializeField] ParticleSystem particles;
+    [SerializeField] AudioClip Explode_Audio;
 
 
     //if explode is true
@@ -25,6 +26,7 @@ public class FireBall : MonoBehaviour
         else if (explode && exploded == false)
         {
             CheckCollisions();
+            AudioSource.PlayClipAtPoint(Explode_Audio, new Vector3(-31, 72, 39), 0.3f);
             particles.Play();
             exploded = true;
         }

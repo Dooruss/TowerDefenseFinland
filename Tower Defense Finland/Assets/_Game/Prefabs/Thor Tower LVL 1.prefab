@@ -112,6 +112,7 @@ MonoBehaviour:
   shootSpeed: 0.5
   particles: {fileID: 1300643344881594514}
   damage: 10
+  shootSound: {fileID: 8300000, guid: f83fea5120bd1ee45ad2095a1ba6fbd2, type: 3}
   Base: {fileID: 5892495129518311051}
   target: {fileID: 0}
   EnemyList: []

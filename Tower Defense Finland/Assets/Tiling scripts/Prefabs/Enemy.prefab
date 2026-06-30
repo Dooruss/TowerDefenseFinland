@@ -408,6 +408,7 @@ MonoBehaviour:
   currentHealth: 0
   maxHealth: 75
   HealthBarFill: {fileID: 8373658368987412324}
+  Death_Sound: {fileID: 8300000, guid: 09e801fdebd5a7a4d8643d4a6cd409eb, type: 3}
 --- !u!54 &8279867139327519025
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.ParticleSystem;
 
@@ -12,6 +14,7 @@ public class FireTower : MonoBehaviour
     public List<GameObject> EnemyList;
     public GameObject fireball;
     public GameObject fireArea;
+    [SerializeField] private AudioClip shootSound;
 
     private void Update()
     {
@@ -28,6 +31,7 @@ public class FireTower : MonoBehaviour
                     }
                     else
                     {
+                        AudioSource.PlayClipAtPoint(shootSound, new Vector3(-31, 72, 39), 0.7f);
                         //make fire area
                         IEnemy enemyInterface = enemy.GetComponent<IEnemy>();
                         Instantiate(fireArea, enemy.transform.position, enemy.transform.rotation);

@@ -110,6 +110,7 @@ MonoBehaviour:
   timer: 0
   BombDamage: 50
   particles: {fileID: 6853912212727043000}
+  Explode_Audio: {fileID: 8300000, guid: 5627776b076f55e4d94d02154a30c12a, type: 3}
 --- !u!1 &7516509547700842978
 GameObject:
   m_ObjectHideFlags: 0
