@@ -6,16 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Game/Scenes/Non Test scenes/Main.unity
-    guid: 84934b4ff49bb114d912ac87f09dd184
-  - enabled: 1
-    path: Assets/_Game/Scenes/Non Test scenes/Menu.unity
-    guid: f3c4fde143a3702449dcafa34457ccfc
-  - enabled: 1
     path: Assets/_Game/Scenes/Tiled Scenes/Ella Menu.unity
     guid: db9693b96acba2f4d91db8010ce8e84d
   - enabled: 1
     path: Assets/_Game/Scenes/Tiled Scenes/Tiling.unity
     guid: ac29617250297f5438d2769d859196cf
+  - enabled: 1
+    path: Assets/_Game/Scenes/Tiled Scenes/You Died.unity
+    guid: b0ce76d9bde2acf449a302349d723e59
+  - enabled: 1
+    path: Assets/_Game/Scenes/Non Test scenes/Main.unity
+    guid: 84934b4ff49bb114d912ac87f09dd184
+  - enabled: 1
+    path: Assets/_Game/Scenes/Non Test scenes/Menu.unity
+    guid: f3c4fde143a3702449dcafa34457ccfc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
